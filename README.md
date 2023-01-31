@@ -19,3 +19,8 @@ VMWare Virtual Machine
 ## Installation
 Innerhalb der VM-Instanz, die auf einem Windows10-Hostsystem läuft, werden die beschriebenen Komponenten installiert.
 Um die großen Datenmengen von Probanden nutzen zu können, wird eine externe USB-Festplatte genutzt.
+
+
+
+## Literatur
+Bhaganagarapu, Kaushik; Jackson, Graeme D.; Abbott, David F. (2013): An automated method for identifying artifact in independent component analysis of resting-state FMRI. In: Frontiers in human neuroscience 7, S. 343. DOI: 10.3389/fnhum.2013.00343.
