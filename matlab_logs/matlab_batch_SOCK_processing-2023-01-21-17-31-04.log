@@ -1,0 +1,51 @@
+Using SOCK located in /home/fsluser/SOCK
+
+SOCK Version 1.4d
+2018-09-25
+Using SPM12 release 7771
+21-Jan-2023 17:31:10 - Commencing SOCK processing in /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1975/Ma2/func
+Unable to read TR from _header_info.txt. Assuming TR is 2.0
+
+pickString =
+
+    'all'
+
+Merged data /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1975/Ma2/func/FWHM_8_img___all.nii.gz already exists, will re-use it...
+
+A Melodic directory for subject /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1975/Ma2/func already exists...
+If you want to re-run Melodic, delete the old FWHM_8_img___all.ica folder...
+
+Made SOCK temporary directory: /tmp/tpa12cb01d_e008_41e3_bfa4_610ef0c161f2_SOCK
+Running SOCK on /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1975/Ma2/func/FWHM_8_img___all.ica/
+
+Using mean functional image for SOCK analysis...
+Using existing CSF and masks...
+Converting thresholded images in stats dir to NIFTI_PAIR format...
+
+Images in stats dir are already in NIFTI_PAIR format
+Obtaining CSF and edge activity measures for SOCK analysis...
+
+Using CSF activity from previous run...
+
+Using edge activity from previous run...
+
+DONE
+
+Obtaining smoothness measures for SOCK analysis...
+
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_read_vols')" style="font-weight:bold">spm_read_vols</a>
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('smoothness_measure_func', '/home/fsluser/SOCK/SOCK_measures/smoothness_measure_func.m', 150)" style="font-weight:bold">smoothness_measure_func</a> (<a href="matlab: opentoline('/home/fsluser/SOCK/SOCK_measures/smoothness_measure_func.m',150,0)">line 150</a>)
+			all_voxels_V = spm_read_vols(VO(img));
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SOCK_main', '/home/fsluser/SOCK/SOCK_main.m', 94)" style="font-weight:bold">SOCK_main</a> (<a href="matlab: opentoline('/home/fsluser/SOCK/SOCK_main.m',94,0)">line 94</a>)
+[smoothness_measure] = smoothness_measure_func(dir_ICA, r_flag);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SOCK', '/home/fsluser/SOCK/SOCK.m', 122)" style="font-weight:bold">SOCK</a> (<a href="matlab: opentoline('/home/fsluser/SOCK/SOCK.m',122,0)">line 122</a>)
+		SOCK_main(dir_ICA, batch_flag, SOCK_dir) % The main function for calculating IC features
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('batch_SOCK', '/home/fsluser/SOCK/batch_SOCK.m', 312)" style="font-weight:bold">batch_SOCK</a> (<a href="matlab: opentoline('/home/fsluser/SOCK/batch_SOCK.m',312,0)">line 312</a>)
+	SOCK('batch_SOCK',fullfile(loc,name_melodic_dir))
+} 
+batch_SOCK

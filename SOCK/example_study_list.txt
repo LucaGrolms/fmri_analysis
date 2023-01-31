@@ -1,0 +1,7 @@
+/example_directoy_path/subject1 1 0 swa*.img
+/example_directoy_path/subject2 11 0 swa*.img
+/example_directoy_path/subject3 11 90 swa*.img
+/example_directoy_path/subject4 11 90 swa*.nii
+/example_directoy_path/subject5 11 90 swa*.nii.gz
+/example_directoy_path/subject6 11 90 swa*.img
+/example_directoy_path/subjectX 11 90 swa*.img

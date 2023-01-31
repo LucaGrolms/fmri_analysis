@@ -1,0 +1,111 @@
+Using SOCK located in /home/fsluser/SOCK
+
+SOCK Version 1.4d
+2018-09-25
+Using SPM12 release 7771
+21-Jan-2023 16:51:09 - Commencing SOCK processing in /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1975/Ma2/func
+Unable to read TR from _header_info.txt. Assuming TR is 2.0
+
+pickString =
+
+    'all'
+
+Merged data /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1975/Ma2/func/FWHM_8_img___all.nii.gz already exists, will re-use it...
+
+A Melodic directory for subject /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1975/Ma2/func already exists...
+If you want to re-run Melodic, delete the old FWHM_8_img___all.ica folder...
+
+Made SOCK temporary directory: /tmp/tpfc0c6e19_580b_44bd_9014_87b8a32d45c9_SOCK
+Running SOCK on /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1975/Ma2/func/FWHM_8_img___all.ica/
+
+Using mean functional image for SOCK analysis...
+Using existing CSF and masks...
+Converting thresholded images in stats dir to NIFTI_PAIR format...
+
+Images in stats dir are already in NIFTI_PAIR format
+Obtaining CSF and edge activity measures for SOCK analysis...
+
+Using CSF activity from previous run...
+
+Using edge activity from previous run...
+
+DONE
+
+Obtaining smoothness measures for SOCK analysis...
+
+Obtaining power spectrum measures for SOCK analysis...
+
+
+TR =
+
+     2
+
+Classifying ICs using SOCK...
+
+Completed SOCK procedure
+
+The following 54 of 200 components were identified as definite artifacts by SOCK:
+ 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,18,19,21,22,25,26,30,34,39,41,43,45,48,60,66,70,75,83,88,92,93,94,101,103,109,115,125,127,130,131,139,141,168,169,182,184,189,192
+
+The following 22 of 200 components were identified as possible artifacts by SOCK:
+ 24,29,46,51,58,59,67,71,100,107,113,114,136,144,153,167,172,186,187,190,197,200
+
+The following 124 of 200 components were identified as unlikely artifacts by SOCK:
+ 17,20,23,27,28,31,32,33,35,36,37,38,40,42,44,47,49,50,52,53,54,55,56,57,61,62,63,64,65,68,69,72,73,74,76,77,78,79,80,81,82,84,85,86,87,89,90,91,95,96,97,98,99,102,104,105,106,108,110,111,112,116,117,118,119,120,121,122,123,124,126,128,129,132,133,134,135,137,138,140,142,143,145,146,147,148,149,150,151,152,154,155,156,157,158,159,160,161,162,163,164,165,166,170,171,173,174,175,176,177,178,179,180,181,183,185,188,191,193,194,195,196,198,199
+
+The 54 definite artifact components will be regressed out when reconstructing the denoised time-series.
+Reconstructing denoised time-series for subject /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1975/Ma2/func
+
+Current directory is /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1975/Ma2/func/FWHM_8_img___all.ica
+fsl_regfilt -i ../FWHM_8_img___all -o denoised_data -d melodic_mix -f "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,18,19,21,22,25,26,30,34,39,41,43,45,48,60,66,70,75,83,88,92,93,94,101,103,109,115,125,127,130,131,139,141,168,169,182,184,189,192"
+Split denoised data for subject /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1975/Ma2/func already exists...
+
+Denoised data for subject /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1975/Ma2/func is already converted in NIFTI_PAIR format...
+
+21-Jan-2023 17:06:36 - Completed SOCK processing in /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1975/Ma2/func
+21-Jan-2023 17:06:37 - Commencing SOCK processing in /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1977/Ma2/func
+Unable to read TR from _header_info.txt. Assuming TR is 2.0
+
+pickString =
+
+    'all'
+
+Merged data /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1977/Ma2/func/FWHM_8_img___all.nii.gz already exists, will re-use it...
+
+A Melodic directory for subject /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1977/Ma2/func already exists...
+If you want to re-run Melodic, delete the old FWHM_8_img___all.ica folder...
+
+Made SOCK temporary directory: /tmp/tpbdb49a18_7c82_4964_b165_902472e1e39e_SOCK
+Running SOCK on /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-1977/Ma2/func/FWHM_8_img___all.ica/
+
+Using mean functional image for SOCK analysis...
+Using existing CSF and masks...
+Converting thresholded images in stats dir to NIFTI_PAIR format...
+
+Images in stats dir are already in NIFTI_PAIR format
+Obtaining CSF and edge activity measures for SOCK analysis...
+
+Using CSF activity from previous run...
+
+Using edge activity from previous run...
+
+DONE
+
+Obtaining smoothness measures for SOCK analysis...
+
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_read_vols')" style="font-weight:bold">spm_read_vols</a>
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('smoothness_measure_func', '/home/fsluser/SOCK/SOCK_measures/smoothness_measure_func.m', 150)" style="font-weight:bold">smoothness_measure_func</a> (<a href="matlab: opentoline('/home/fsluser/SOCK/SOCK_measures/smoothness_measure_func.m',150,0)">line 150</a>)
+			all_voxels_V = spm_read_vols(VO(img));
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SOCK_main', '/home/fsluser/SOCK/SOCK_main.m', 94)" style="font-weight:bold">SOCK_main</a> (<a href="matlab: opentoline('/home/fsluser/SOCK/SOCK_main.m',94,0)">line 94</a>)
+[smoothness_measure] = smoothness_measure_func(dir_ICA, r_flag);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SOCK', '/home/fsluser/SOCK/SOCK.m', 122)" style="font-weight:bold">SOCK</a> (<a href="matlab: opentoline('/home/fsluser/SOCK/SOCK.m',122,0)">line 122</a>)
+		SOCK_main(dir_ICA, batch_flag, SOCK_dir) % The main function for calculating IC features
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('batch_SOCK', '/home/fsluser/SOCK/batch_SOCK.m', 312)" style="font-weight:bold">batch_SOCK</a> (<a href="matlab: opentoline('/home/fsluser/SOCK/batch_SOCK.m',312,0)">line 312</a>)
+	SOCK('batch_SOCK',fullfile(loc,name_melodic_dir))
+} 
+batch_SOCK

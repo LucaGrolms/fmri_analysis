@@ -1,0 +1,1620 @@
+Using SOCK located in /home/fsluser/SOCK
+
+SOCK Version 1.4d
+2018-09-25
+Using SPM12 release 7771
+19-Jan-2023 21:21:57 - Commencing SOCK processing in /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Patienten/sub-1018/Ma2/func
+Unable to read TR from _header_info.txt. Assuming TR is 2.0
+
+pickString =
+
+    'all'
+
+Creating 4D data file...
+Running Melodic ICA on /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Patienten/sub-1018/Ma2/func
+
+
+Melodic Version 3.15
+
+Melodic results will be in FWHM_8_img___all.ica
+
+Create mask ... done
+Reading data file FWHM_8_img___all  ...  done
+  Estimating data smoothness ...  done 
+  Removing mean image ... done
+  Normalising by voxel-wise variance ... done
+Excluding voxels with constant value ... done
+
+  Data size : 590 x 254777
+
+Starting PCA  ... done
+Start whitening using  146 dimensions ... 
+  retaining 93.8074 percent of the variability 
+ ... done
+
+Starting ICA estimation using symm
+
+  Step no. 1 change : 0.984431
+  Step no. 2 change : 0.333889
+  Step no. 3 change : 0.135693
+  Step no. 4 change : 0.0953202
+  Step no. 5 change : 0.0730509
+  Step no. 6 change : 0.055931
+  Step no. 7 change : 0.0548554
+  Step no. 8 change : 0.0573024
+  Step no. 9 change : 0.0364631
+  Step no. 10 change : 0.031842
+  Step no. 11 change : 0.0243932
+  Step no. 12 change : 0.016103
+  Step no. 13 change : 0.0139686
+  Step no. 14 change : 0.0113721
+  Step no. 15 change : 0.0102629
+  Step no. 16 change : 0.0084986
+  Step no. 17 change : 0.00646422
+  Step no. 18 change : 0.00586806
+  Step no. 19 change : 0.00499065
+  Step no. 20 change : 0.00432315
+  Step no. 21 change : 0.00436981
+  Step no. 22 change : 0.00436944
+  Step no. 23 change : 0.00421855
+  Step no. 24 change : 0.00392374
+  Step no. 25 change : 0.00354637
+  Step no. 26 change : 0.00314943
+  Step no. 27 change : 0.00277512
+  Step no. 28 change : 0.00244421
+  Step no. 29 change : 0.00216409
+  Step no. 30 change : 0.00193551
+  Step no. 31 change : 0.00175532
+  Step no. 32 change : 0.00161861
+  Step no. 33 change : 0.00152224
+  Step no. 34 change : 0.00146716
+  Step no. 35 change : 0.00150746
+  Step no. 36 change : 0.00165341
+  Step no. 37 change : 0.00213845
+  Step no. 38 change : 0.0026487
+  Step no. 39 change : 0.00295827
+  Step no. 40 change : 0.0030308
+  Step no. 41 change : 0.00279819
+  Step no. 42 change : 0.00230216
+  Step no. 43 change : 0.00179937
+  Step no. 44 change : 0.00151276
+  Step no. 45 change : 0.0012477
+  Step no. 46 change : 0.001236
+  Step no. 47 change : 0.00132819
+  Step no. 48 change : 0.00139292
+  Step no. 49 change : 0.00142261
+  Step no. 50 change : 0.00141061
+  Step no. 51 change : 0.00135294
+  Step no. 52 change : 0.00125069
+  Step no. 53 change : 0.00111162
+  Step no. 54 change : 0.000949495
+  Step no. 55 change : 0.000780901
+  Step no. 56 change : 0.000631852
+  Step no. 57 change : 0.000588234
+  Step no. 58 change : 0.000562475
+  Step no. 59 change : 0.000524895
+  Step no. 60 change : 0.000477098
+  Step no. 61 change : 0.00042222
+  Step no. 62 change : 0.000364229
+  Step no. 63 change : 0.000307577
+  Step no. 64 change : 0.00030617
+  Step no. 65 change : 0.000302803
+  Step no. 66 change : 0.000296893
+  Step no. 67 change : 0.000288136
+  Step no. 68 change : 0.000276496
+  Step no. 69 change : 0.000262184
+  Step no. 70 change : 0.000245618
+  Step no. 71 change : 0.000227363
+  Step no. 72 change : 0.000208066
+  Step no. 73 change : 0.00018839
+  Step no. 74 change : 0.000168951
+  Step no. 75 change : 0.000150274
+  Step no. 76 change : 0.000132769
+  Step no. 77 change : 0.000132129
+  Step no. 78 change : 0.000136439
+  Step no. 79 change : 0.000140096
+  Step no. 80 change : 0.000143124
+  Step no. 81 change : 0.000145557
+  Step no. 82 change : 0.000147439
+  Step no. 83 change : 0.00014881
+  Step no. 84 change : 0.000149709
+  Step no. 85 change : 0.000150164
+  Step no. 86 change : 0.000150191
+  Step no. 87 change : 0.000149797
+  Step no. 88 change : 0.000148976
+  Step no. 89 change : 0.000147711
+  Step no. 90 change : 0.000145984
+  Step no. 91 change : 0.00014377
+  Step no. 92 change : 0.00014105
+  Step no. 93 change : 0.00014178
+  Step no. 94 change : 0.000152902
+  Step no. 95 change : 0.000163771
+  Step no. 96 change : 0.000174027
+  Step no. 97 change : 0.00018325
+  Step no. 98 change : 0.000190979
+  Step no. 99 change : 0.000196741
+  Step no. 100 change : 0.000200096
+  Step no. 101 change : 0.000200685
+  Step no. 102 change : 0.000198284
+  Step no. 103 change : 0.000192848
+  Step no. 104 change : 0.00018453
+  Step no. 105 change : 0.000191723
+  Step no. 106 change : 0.000202969
+  Step no. 107 change : 0.000215494
+  Step no. 108 change : 0.000229533
+  Step no. 109 change : 0.000245317
+  Step no. 110 change : 0.000263062
+  Step no. 111 change : 0.000282937
+  Step no. 112 change : 0.000305027
+  Step no. 113 change : 0.000329291
+  Step no. 114 change : 0.000355494
+  Step no. 115 change : 0.000383145
+  Step no. 116 change : 0.000411418
+  Step no. 117 change : 0.0004391
+  Step no. 118 change : 0.000464576
+  Step no. 119 change : 0.000485884
+  Step no. 120 change : 0.000500881
+  Step no. 121 change : 0.000544368
+  Step no. 122 change : 0.000600633
+  Step no. 123 change : 0.000657181
+  Step no. 124 change : 0.000712608
+  Step no. 125 change : 0.000765404
+  Step no. 126 change : 0.000814139
+  Step no. 127 change : 0.000857686
+  Step no. 128 change : 0.00089538
+  Step no. 129 change : 0.000927056
+  Step no. 130 change : 0.000952888
+  Step no. 131 change : 0.000973053
+  Step no. 132 change : 0.000987294
+  Step no. 133 change : 0.000994527
+  Step no. 134 change : 0.00099265
+  Step no. 135 change : 0.000978722
+  Step no. 136 change : 0.000949572
+  Step no. 137 change : 0.000902792
+  Step no. 138 change : 0.000837824
+  Step no. 139 change : 0.000756709
+  Step no. 140 change : 0.000664085
+  Step no. 141 change : 0.000566323
+  Step no. 142 change : 0.000470117
+  Step no. 143 change : 0.000381094
+  Step no. 144 change : 0.000302963
+  Step no. 145 change : 0.000237347
+  Step no. 146 change : 0.000184158
+  Step no. 147 change : 0.000154744
+  Step no. 148 change : 0.000140724
+  Step no. 149 change : 0.00012693
+  Step no. 150 change : 0.000113689
+  Step no. 151 change : 0.000101244
+  Step no. 152 change : 9.27817e-05
+  Step no. 153 change : 8.69767e-05
+  Step no. 154 change : 8.13277e-05
+  Step no. 155 change : 7.58871e-05
+  Step no. 156 change : 7.06935e-05
+  Step no. 157 change : 6.5773e-05
+  Step no. 158 change : 6.11406e-05
+  Step no. 159 change : 5.68028e-05
+  Step no. 160 change : 5.2759e-05
+  Step no. 161 change : 4.90035e-05
+  Convergence after 161 steps 
+
+Sorting IC maps
+
+Writing results to : 
+  FWHM_8_img___all.ica/melodic_oIC
+  FWHM_8_img___all.ica/melodic_IC
+  FWHM_8_img___all.ica/Noise__inv
+  FWHM_8_img___all.ica/melodic_Tmodes
+  FWHM_8_img___all.ica/melodic_mix
+  FWHM_8_img___all.ica/melodic_FTmix
+  FWHM_8_img___all.ica/melodic_PPCA
+  FWHM_8_img___all.ica/melodic_ICstats
+  FWHM_8_img___all.ica/melodic_unmix
+  FWHM_8_img___all.ica/mask
+  FWHM_8_img___all.ica/melodic_white
+  FWHM_8_img___all.ica/melodic_dewhite
+  FWHM_8_img___all.ica/melodic_FTdewhite
+  FWHM_8_img___all.ica/melodic_pcaE
+  FWHM_8_img___all.ica/melodic_pcaD
+  FWHM_8_img___all.ica/melodic_pca
+...done
+Creating report index page ...done
+
+
+Running Mixture Modelling on Z-transformed IC maps ...
+  IC map 1 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_1
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_1
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat1
+   creating report page ...    done
+  IC map 2 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_2
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_2
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat2
+   creating report page ...    done
+  IC map 3 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_3
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_3
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat3
+   creating report page ...    done
+  IC map 4 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_4
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_4
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat4
+   creating report page ...    done
+  IC map 5 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_5
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_5
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat5
+   creating report page ...    done
+  IC map 6 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_6
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_6
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat6
+   creating report page ...    done
+  IC map 7 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_7
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_7
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat7
+   creating report page ...    done
+  IC map 8 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_8
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_8
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat8
+   creating report page ...    done
+  IC map 9 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_9
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_9
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat9
+   creating report page ...    done
+  IC map 10 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_10
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_10
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat10
+   creating report page ...    done
+  IC map 11 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_11
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_11
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat11
+   creating report page ...    done
+  IC map 12 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_12
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_12
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat12
+   creating report page ...    done
+  IC map 13 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_13
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_13
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat13
+   creating report page ...    done
+  IC map 14 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_14
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_14
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat14
+   creating report page ...    done
+  IC map 15 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_15
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_15
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat15
+   creating report page ...    done
+  IC map 16 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_16
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_16
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat16
+   creating report page ...    done
+  IC map 17 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_17
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_17
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat17
+   creating report page ...    done
+  IC map 18 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_18
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_18
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat18
+   creating report page ...    done
+  IC map 19 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_19
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_19
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat19
+   creating report page ...    done
+  IC map 20 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_20
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_20
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat20
+   creating report page ...    done
+  IC map 21 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_21
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_21
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat21
+   creating report page ...    done
+  IC map 22 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_22
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_22
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat22
+   creating report page ...    done
+  IC map 23 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_23
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_23
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat23
+   creating report page ...    done
+  IC map 24 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_24
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_24
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat24
+   creating report page ...    done
+  IC map 25 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_25
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_25
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat25
+   creating report page ...    done
+  IC map 26 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_26
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_26
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat26
+   creating report page ...    done
+  IC map 27 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_27
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_27
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat27
+   creating report page ...    done
+  IC map 28 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_28
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_28
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat28
+   creating report page ...    done
+  IC map 29 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_29
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_29
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat29
+   creating report page ...    done
+  IC map 30 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_30
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_30
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat30
+   creating report page ...    done
+  IC map 31 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_31
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_31
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat31
+   creating report page ...    done
+  IC map 32 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_32
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_32
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat32
+   creating report page ...    done
+  IC map 33 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_33
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_33
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat33
+   creating report page ...    done
+  IC map 34 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_34
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_34
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat34
+   creating report page ...    done
+  IC map 35 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_35
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_35
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat35
+   creating report page ...    done
+  IC map 36 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_36
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_36
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat36
+   creating report page ...    done
+  IC map 37 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_37
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_37
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat37
+   creating report page ...    done
+  IC map 38 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_38
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_38
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat38
+   creating report page ...    done
+  IC map 39 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_39
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_39
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat39
+   creating report page ...    done
+  IC map 40 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_40
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_40
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat40
+   creating report page ...    done
+  IC map 41 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_41
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_41
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat41
+   creating report page ...    done
+  IC map 42 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_42
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_42
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat42
+   creating report page ...    done
+  IC map 43 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_43
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_43
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat43
+   creating report page ...    done
+  IC map 44 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_44
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_44
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat44
+   creating report page ...    done
+  IC map 45 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_45
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_45
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat45
+   creating report page ...    done
+  IC map 46 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_46
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_46
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat46
+   creating report page ...    done
+  IC map 47 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_47
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_47
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat47
+   creating report page ...    done
+  IC map 48 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_48
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_48
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat48
+   creating report page ...    done
+  IC map 49 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_49
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_49
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat49
+   creating report page ...    done
+  IC map 50 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_50
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_50
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat50
+   creating report page ...    done
+  IC map 51 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_51
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_51
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat51
+   creating report page ...    done
+  IC map 52 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_52
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_52
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat52
+   creating report page ...    done
+  IC map 53 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_53
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_53
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat53
+   creating report page ...    done
+  IC map 54 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_54
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_54
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat54
+   creating report page ...    done
+  IC map 55 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_55
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_55
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat55
+   creating report page ...    done
+  IC map 56 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_56
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_56
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat56
+   creating report page ...    done
+  IC map 57 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_57
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_57
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat57
+   creating report page ...    done
+  IC map 58 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_58
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_58
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat58
+   creating report page ...    done
+  IC map 59 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_59
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_59
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat59
+   creating report page ...    done
+  IC map 60 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_60
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_60
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat60
+   creating report page ...    done
+  IC map 61 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_61
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_61
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat61
+   creating report page ...    done
+  IC map 62 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_62
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_62
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat62
+   creating report page ...    done
+  IC map 63 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_63
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_63
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat63
+   creating report page ...    done
+  IC map 64 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_64
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_64
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat64
+   creating report page ...    done
+  IC map 65 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_65
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_65
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat65
+   creating report page ...    done
+  IC map 66 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_66
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_66
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat66
+   creating report page ...    done
+  IC map 67 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_67
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_67
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat67
+   creating report page ...    done
+  IC map 68 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_68
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_68
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat68
+   creating report page ...    done
+  IC map 69 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_69
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_69
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat69
+   creating report page ...    done
+  IC map 70 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_70
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_70
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat70
+   creating report page ...    done
+  IC map 71 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_71
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_71
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat71
+   creating report page ...    done
+  IC map 72 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_72
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_72
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat72
+   creating report page ...    done
+  IC map 73 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_73
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_73
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat73
+   creating report page ...    done
+  IC map 74 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_74
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_74
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat74
+   creating report page ...    done
+  IC map 75 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_75
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_75
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat75
+   creating report page ...    done
+  IC map 76 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_76
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_76
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat76
+   creating report page ...    done
+  IC map 77 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_77
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_77
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat77
+   creating report page ...    done
+  IC map 78 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_78
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_78
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat78
+   creating report page ...    done
+  IC map 79 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_79
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_79
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat79
+   creating report page ...    done
+  IC map 80 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_80
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_80
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat80
+   creating report page ...    done
+  IC map 81 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_81
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_81
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat81
+   creating report page ...    done
+  IC map 82 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_82
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_82
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat82
+   creating report page ...    done
+  IC map 83 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_83
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_83
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat83
+   creating report page ...    done
+  IC map 84 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_84
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_84
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat84
+   creating report page ...    done
+  IC map 85 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_85
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_85
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat85
+   creating report page ...    done
+  IC map 86 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_86
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_86
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat86
+   creating report page ...    done
+  IC map 87 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_87
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_87
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat87
+   creating report page ...    done
+  IC map 88 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_88
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_88
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat88
+   creating report page ...    done
+  IC map 89 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_89
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_89
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat89
+   creating report page ...    done
+  IC map 90 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_90
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_90
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat90
+   creating report page ...    done
+  IC map 91 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_91
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_91
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat91
+   creating report page ...    done
+  IC map 92 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_92
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_92
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat92
+   creating report page ...    done
+  IC map 93 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_93
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_93
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat93
+   creating report page ...    done
+  IC map 94 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_94
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_94
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat94
+   creating report page ...    done
+  IC map 95 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_95
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_95
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat95
+   creating report page ...    done
+  IC map 96 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_96
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_96
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat96
+   creating report page ...    done
+  IC map 97 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_97
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_97
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat97
+   creating report page ...    done
+  IC map 98 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_98
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_98
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat98
+   creating report page ...    done
+  IC map 99 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_99
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_99
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat99
+   creating report page ...    done
+  IC map 100 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_100
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_100
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat100
+   creating report page ...    done
+  IC map 101 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_101
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_101
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat101
+   creating report page ...    done
+  IC map 102 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_102
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_102
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat102
+   creating report page ...    done
+  IC map 103 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_103
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_103
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat103
+   creating report page ...    done
+  IC map 104 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_104
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_104
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat104
+   creating report page ...    done
+  IC map 105 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_105
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_105
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat105
+   creating report page ...    done
+  IC map 106 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_106
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_106
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat106
+   creating report page ...    done
+  IC map 107 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_107
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_107
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat107
+   creating report page ...    done
+  IC map 108 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_108
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_108
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat108
+   creating report page ...    done
+  IC map 109 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_109
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_109
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat109
+   creating report page ...    done
+  IC map 110 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_110
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_110
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat110
+   creating report page ...    done
+  IC map 111 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_111
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_111
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat111
+   creating report page ...    done
+  IC map 112 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_112
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_112
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat112
+   creating report page ...    done
+  IC map 113 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_113
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_113
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat113
+   creating report page ...    done
+  IC map 114 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_114
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_114
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat114
+   creating report page ...    done
+  IC map 115 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_115
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_115
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat115
+   creating report page ...    done
+  IC map 116 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_116
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_116
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat116
+   creating report page ...    done
+  IC map 117 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_117
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_117
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat117
+   creating report page ...    done
+  IC map 118 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_118
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_118
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat118
+   creating report page ...    done
+  IC map 119 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_119
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_119
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat119
+   creating report page ...    done
+  IC map 120 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_120
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_120
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat120
+   creating report page ...    done
+  IC map 121 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_121
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_121
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat121
+   creating report page ...    done
+  IC map 122 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_122
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_122
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat122
+   creating report page ...    done
+  IC map 123 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_123
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_123
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat123
+   creating report page ...    done
+  IC map 124 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_124
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_124
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat124
+   creating report page ...    done
+  IC map 125 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_125
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_125
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat125
+   creating report page ...    done
+  IC map 126 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_126
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_126
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat126
+   creating report page ...    done
+  IC map 127 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_127
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_127
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat127
+   creating report page ...    done
+  IC map 128 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_128
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_128
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat128
+   creating report page ...    done
+  IC map 129 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_129
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_129
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat129
+   creating report page ...    done
+  IC map 130 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_130
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_130
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat130
+   creating report page ...    done
+  IC map 131 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_131
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_131
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat131
+   creating report page ...    done
+  IC map 132 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_132
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_132
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat132
+   creating report page ...    done
+  IC map 133 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_133
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_133
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat133
+   creating report page ...    done
+  IC map 134 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_134
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_134
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat134
+   creating report page ...    done
+  IC map 135 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_135
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_135
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat135
+   creating report page ...    done
+  IC map 136 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_136
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_136
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat136
+   creating report page ...    done
+  IC map 137 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_137
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_137
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat137
+   creating report page ...    done
+  IC map 138 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_138
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_138
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat138
+   creating report page ...    done
+  IC map 139 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_139
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_139
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat139
+   creating report page ...    done
+  IC map 140 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_140
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_140
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat140
+   creating report page ...    done
+  IC map 141 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_141
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_141
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat141
+   creating report page ...    done
+  IC map 142 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_142
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_142
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat142
+   creating report page ...    done
+  IC map 143 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_143
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_143
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat143
+   creating report page ...    done
+  IC map 144 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_144
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_144
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat144
+   creating report page ...    done
+  IC map 145 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_145
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_145
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat145
+   creating report page ...    done
+  IC map 146 ... 
+   calculating mixture-model fit 
+   saving probability map:    FWHM_8_img___all.ica/stats/probmap_146
+   saving mixture model fit:  FWHM_8_img___all.ica/stats/MMstats_146
+   re-scaling spatial maps ... 
+   thresholding ... 
+   alternative hypothesis test at p > 0.5
+   saving thresholded Z-stats image:  FWHM_8_img___all.ica/stats/thresh_zstat146
+   creating report page ...    done
+
+Writing results to : 
+  FWHM_8_img___all.ica/melodic_IC
+  FWHM_8_img___all.ica/Noise__inv
+  FWHM_8_img___all.ica/melodic_Tmodes
+  FWHM_8_img___all.ica/melodic_mix
+  FWHM_8_img___all.ica/melodic_FTmix
+  FWHM_8_img___all.ica/melodic_PPCA
+  FWHM_8_img___all.ica/melodic_ICstats
+  FWHM_8_img___all.ica/melodic_unmix
+  FWHM_8_img___all.ica/mask
+  FWHM_8_img___all.ica/melodic_white
+  FWHM_8_img___all.ica/melodic_dewhite
+  FWHM_8_img___all.ica/melodic_FTdewhite
+  FWHM_8_img___all.ica/melodic_pcaE
+  FWHM_8_img___all.ica/melodic_pcaD
+  FWHM_8_img___all.ica/melodic_pca
+...done
+
+
+ To view the output report point your web browser at FWHM_8_img___all.ica/report/00index.html
+
+finished!
+
+Made SOCK temporary directory: /tmp/tp670554cb_b255_42d5_b320_7104f3ea3ab0_SOCK
+Running SOCK on /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Patienten/sub-1018/Ma2/func/FWHM_8_img___all.ica/
+
+Converting mean functional image into NIFTI_PAIR format...
+Generating edge and CSF masks using SPM12 Segment
+
+Using mean functional image for SOCK analysis...
+Conversion Tools:New Segment -> Spatial:Segment
+
+
+------------------------------------------------------------------------
+19-Jan-2023 22:24:29 - Running job #1
+------------------------------------------------------------------------
+19-Jan-2023 22:24:30 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     22:24:30 - 19/01/2023
+========================================================================
+Segment <a href="matlab:spm_image('display','/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Patienten/sub-1018/Ma2/func/FWHM_8_img___all.ica/mean.img');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Patienten/sub-1018/Ma2/func/FWHM_8_img___all.ica/mean.img</a>
+Completed                               :          22:25:15 - 19/01/2023
+19-Jan-2023 22:25:15 - Done    'Segment'
+19-Jan-2023 22:25:15 - Done
+
+Converting thresholded images in stats dir to NIFTI_PAIR format...
+
+Obtaining CSF and edge activity measures for SOCK analysis...
+
+Obtaining edge activity for IC    123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143144145146
+DONE
+
+Obtaining smoothness measures for SOCK analysis...
+
+Obtaining power spectrum measures for SOCK analysis...
+
+
+TR =
+
+     2
+
+Classifying ICs using SOCK...
+
+Completed SOCK procedure
+
+The following 54 of 146 components were identified as definite artifacts by SOCK:
+ 1,2,3,4,5,6,7,8,10,11,12,13,14,16,17,18,20,21,24,28,32,33,34,36,37,43,45,49,52,58,59,61,67,74,79,80,81,82,85,86,87,91,93,94,98,101,110,118,129,137,138,143,145,146
+
+The following 18 of 146 components were identified as possible artifacts by SOCK:
+ 9,19,23,25,26,31,41,44,50,62,84,99,106,113,117,130,134,139
+
+The following 74 of 146 components were identified as unlikely artifacts by SOCK:
+ 15,22,27,29,30,35,38,39,40,42,46,47,48,51,53,54,55,56,57,60,63,64,65,66,68,69,70,71,72,73,75,76,77,78,83,88,89,90,92,95,96,97,100,102,103,104,105,107,108,109,111,112,114,115,116,119,120,121,122,123,124,125,126,127,128,131,132,133,135,136,140,141,142,144
+
+The 54 definite artifact components will be regressed out when reconstructing the denoised time-series.
+Reconstructing denoised time-series for subject /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Patienten/sub-1018/Ma2/func
+
+Current directory is /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Patienten/sub-1018/Ma2/func/FWHM_8_img___all.ica
+fsl_regfilt -i ../FWHM_8_img___all -o denoised_data -d melodic_mix -f "1,2,3,4,5,6,7,8,10,11,12,13,14,16,17,18,20,21,24,28,32,33,34,36,37,43,45,49,52,58,59,61,67,74,79,80,81,82,85,86,87,91,93,94,98,101,110,118,129,137,138,143,145,146"
+Spliting de-noised 4D image into 3D images for subject /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Patienten/sub-1018/Ma2/func
+
+19-Jan-2023 23:17:55 - Completed SOCK processing in /mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Patienten/sub-1018/Ma2/func

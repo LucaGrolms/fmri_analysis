@@ -1,0 +1,48 @@
+Breifly describes what each element represents in the Matlab structure, IC. Some of these (identified below) are currently NOT used in SOCK.
+
+Created: 8 Nov 2012
+Creator: Kaushik B (kaushik@brain.org.au)
+
+Copyright (C) 2012-2013 The Florey Institute of 
+    Neuroscience and Mental Health, Melbourne, Australia
+
+IC.CSF_activity: The amount of activity overlapping the CSF mask.
+IC.edge_activity: The amount of activity overlapping the edge mask (normalised to 1).
+IC.edge_activity_label_spatial: Identifies whether an IC is edgy or not. It can take on the values, "low" (non-edgy) or "high" (edgy).
+
+IC.smooth: Identifies whether an IC is smooth, subsmooth or unsmooth. It can take on the values, 1 (smooth) or 2 (subsmooth) or 3 (unsmooth).
+
+IC.smoothswitch: Identifies how the kmeans clustering algorithm assigned smooth, subsmooth or unsmooth ICs. It can take on the values, 0 or 1. Not important in the final outcome.
+
+IC.smooth_ICs: ICs which are classified as smooth by SOCK.
+IC.unsmooth_ICs: ICs which are classified as unsmooth by SOCK.
+IC.subsmooth: ICs which are classified as subsmooth by SOCK.
+
+IC.TR: TR for the study.
+IC.vols: Number of volumes in the study.
+
+IC.ps_matrix: A matrix containing the power spectrum values extracted from the FSL.
+IC.corr (NOT USED): Return the IC with the highest rating power spectrum correlation. For exmaple if IC.corr(20)=9, this means that IC 20 has a power spectrum that is most correlated with IC 9.
+
+IC.high_freq_noise_ICs: Returns the ICs which have been clustered into high frequency (0.08Hz to nyquist frequency) noise category. 
+IC.high_freq_non_noise_ICs: Returns the ICs which have been clustered into high frequency (0.08Hz to nyquist frequency) non noise category.
+
+IC.low_freq_noise_ICs (NOT USED): Returns the ICs which have been clustered into low frequency (0Hz to 0.01Hz) noise category. 
+IC.low_freq_non_noise_ICs (NOT USED): Returns the ICs which have been clustered into low frequency (0hz to 0.01hz) non noise category.  
+
+IC.tc_matrix (NOT USED): A matrix containing the time course values extracted from the FSL.
+IC.tc_corr (NOT USED): Return the IC with the highest rating time course correlation. For exmaple if IC.tc_corr(20)=9, this means that IC 20 has a time course that is most correlated with IC 9.
+
+IC.observe (NOT USED): NA
+
+IC.edge_flag (NOT USED): Returns a 0 or 1 to warn users that the IC has substantial edge activity, but not enough to be thrown out. 
+IC.CSF_flag (NOT USED): Returns a 0 or 1 to warn users that the IC has substantial CSF activity, but not enough to be thrown out.
+
+IC.cat: Contains the category of each IC. 1 = artifact, 2 = possible artifact and 3 = definite artifact.
+
+IC.artifacts: Returns the ICs which SOCK classified as artifacts. 
+
+IC.non_artifacts: Returns the ICs which SOCK classified as non artifacts. 
+
+
+

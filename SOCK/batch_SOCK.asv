@@ -1,0 +1,473 @@
+function batch_SOCK
+
+
+% Use this function to run SOCK as a noise filter
+% It will (i) merge img files (swa*.img by default), (ii) run melodic, 
+% (iii) run SOCK and (iv) re-construct 4D fMRI data ready for SPM 
+% or eICA or your favourite other analysis.
+%
+% If you later wish to know which IC's were identified as artifacts, 
+% load the IC.mat file and type "IC.artifacts" to list the ICs which 
+% SOCK classified as definite artifact. "IC.non_artifacts" lists those
+% ICs which SOCK classified as non artifacts. For more granularity,
+% you may also examine IC.cat: This array lists a category number
+% for each component: 3=definite artifact, 2=possible artifact,
+% and 1=unlikely artifact.
+%
+% NOTE: This script does not support image filenames containing spaces.
+
+%_______________________________________________________________________
+% Copyright (C) 2012-2017 The Florey Institute of 
+%    Neuroscience and Mental Health, Melbourne, Australia
+%
+% Coded by Kaushik Bhaganagarapu and David Abbott
+%
+% Please refer to the following for a description of the
+% methods implemented in the SOCK software. If you publish 
+% results using these methods or variations of them, please cite 
+% this paper: 
+%
+%  Bhaganagarapu K, Jackson GD and Abbott DF (2013). 
+%  An automated method for identifying artifact in ICA of resting-state fMRI. 
+%  Front. Hum. Neurosci. 7:343. 
+%  doi: 10.3389/fnhum.2013.00343
+%
+% If you use SOCK as a filter, please also cite:
+%
+%  Bhaganagarapu K, Jackson GD, Abbott DF. (2014)
+%  De-noising with a SOCK can improve the performance of event-related ICA. 
+%  Frontiers in Neuroscience 8(285):1-9
+%  doi:10.3389/fnins.2014.00285.
+%
+% SOCK is free software: you can redistribute it and/or modify it under
+% the terms of the GNU General Public License as published by the 
+% Free Software Foundation, either version 3 of the License, 
+% or (at your option) any later version.
+% 
+% SOCK is distributed in the hope that it will be useful, 
+% but WITHOUT ANY WARRANTY; without even the implied warranty 
+% of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+% See the GNU General Public License for more details.
+% 
+% You should have received a copy of the GNU General Public License
+% along with this program (see LICENCE.txt). If not, 
+% see <http://www.gnu.org/licenses/>.
+%
+% _______________________________________________________________________
+% History: 
+% 	2017-11-28 (dfa): Support iBT v3.6 format + wildCol studylist files
+% 	2017-05-23 (dfa): Support iBT format + wildCol studylist files
+% 	2015-11-12 (dfa): Fixed text description of unlikely artefacts. 
+% 	2015-11-11 and 2015-06-24 (dfa): (version date 2015-06-24)
+%	* Display component numbers in all classification categories 
+%	  (including the previously undocumented "possible artifact")
+%	* New AGRESSIVE_ARTIFACT_CLASSIFICATION flag allows denoising
+%	  regression to include the "possible artifact" category
+%	* Put more effort into finding where SOCK is installed so 
+%	  less likely to need to edit this script.
+%	* Use diary command to log matlab session output to a file
+%	2015-06-19 (dfa): 
+%	* Display component numbers of artifacts.
+%	* Moved genpath() earlier so all SOCK functions
+%	  can be found when needed (including iBT_info)
+%	2015-06-16  David Abbott (dfa) added flexible options and error
+%		checking to cater for public release.
+%	2012-2014: Simple pre-release in-house version by Kaushik Bhaganagarapu
+
+diary( ['matlab_batch_SOCK_processing' sprintf('-%.2i',fix(clock)) '.log'] )
+ 
+AGGRESSIVE_ARTIFACT_CLASSIFICATION = 0;	% Set to 0 to regress out "definite" artifact category only (as per published SOCK validation papers). 
+					% Set to 1 to also regress out "possible" artifact category (at the risk of loosing some of the biological signal of interest).
+					% Note: This only affects the denoised time-series reconstruction step, so if you have run batch_SOCK once already, you can
+					% re-run with a different AGGRESSIVE_ARTIFACT_CLASSIFICATION setting and you just need to set RECONSTRUCT_AGAIN to 1 below
+					% for it to take effect (no need for START_AGAIN).
+
+START_AGAIN=0; 	% If 1, we will re-create and overwrite previous SOCK processing (except the ICA - if you want to re-do the ICA, please remove or rename the old .ica folder). 
+		% If 0, we will re-use some existing SOCK classification files from previous processing runs if they exist.
+
+RECONSTRUCT_AGAIN=0; % If 1, then reconstruct de-noised time series even if it already exists (even if START_AGAIN==0). Useful for example if you change the filter aggressiveness and re-run.
+
+default_TR = '3.0'; % Default TR, used only if a _header_info.txt file is not found in the same folder as the images selected for processing. 
+  % If you use the iBrain Analysis Toolbox for SPM for pre-processing then you probabaly already have this generated automatically.
+  % Otherwise, if you want to make your own _header_info.txt, all SOCK needs it to be is a text file containing at least a line 
+  % with "TR(s):" followed by the TR. e.g. TR(s):3.0
+
+default_preSOCK_image_wild = 'swa*.img'; % If not specified in the studylist, will process all images in source folder matching this wildcard
+
+preSOCK_image_is4D = 0; % 0=no, 1=yes. We can skip merging of the data into a 4D timeseries if it is already in that form, however the specified pick range is presently ignored if this is the case.
+
+default_pickStart = 1; % If not specified in the studylist, will process from the first image found
+default_pickEnd = 0; % If not specified in the studylist, will process to the end of images found
+
+OUTPUT_NIFTI_PAIR = 1;  % If 0 and if input images are 3D, then output will be as you have confingured for fsl (usually NIFTI_GZ)
+			% If 1 then output will be NIFTI_PAIR format: in this case only, filename numbering is also zero-padded so they sort more easily.
+
+% If you need to source the environment for fsl each time this script is run, then include the relevant command below:
+% command_pre_melodic = strcat('source /usr/local/bin/fsl -e ;');
+
+% A studylist file must be supplied that contains one line per session with either
+% one field per line simply listing the source folder
+%   or
+% the following 4 space-separated fields per line:
+% source_folder pick_start pick_end preSOCK_image_wild
+% Set pick_start to 1 to begin with the first image. Set pick_end to 0 to process all images from pick_start onwards.
+%
+% iBrainTools studylist files are also supported, optionally with preSOCK_image_wild at end of each line
+%
+
+% The default SOCK location is where you have this batch_SOCK. 
+% If SOCK is not found there (for example if you are using a 
+% study-specific customised copy of batch_SOCK.m) then a check is
+% made for SOCK in the current MATLAB path. If it is not found
+% there a search is made of some standard locations including your
+% home folder. You may wish to edit one of these if you have 
+% installed SOCK somewhere else.
+SOCK_location = fileparts(which(mfilename));
+SOCK_m = dir(fullfile(SOCK_location,'SOCK.m'));
+if length(SOCK_m) == 0, SOCK_location = fileparts(which('SOCK')); end
+SOCK_m = dir(fullfile(SOCK_location,'SOCK.m'));
+if length(SOCK_m) == 0,
+	SOCK_location='~/SOCK'; % If not found yet, try this.
+	SOCK_m = dir(fullfile(SOCK_location,'SOCK.m'));
+	if length(SOCK_m) == 0,
+		SOCK_location='/usr/local/SOCK'; % If not found yet, try this.
+		SOCK_m = dir(fullfile(SOCK_location,'SOCK.m'));
+		if length(SOCK_m) == 0,
+			SOCK_location='/opt/SOCK'; % If not found yet, try this.
+			SOCK_m = dir(fullfile(SOCK_location,'SOCK.m'));
+		end
+	end
+end
+
+%% User editing of material below this line is usually not necessary. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+if length(SOCK_m) == 0,
+	error('Unable to find SOCK.m in MATLAB path');
+else
+	addpath(genpath(SOCK_location)); % Make sure all SOCK functions are in Matlab path.
+	which_SOCK=fileparts(which('SOCK'));
+	SOCK_location=fileparts(which('SOCK'));
+	disp(['Using SOCK located in ' SOCK_location]);
+	type(fullfile(SOCK_location,'version'));
+end
+
+[SpmVersion,SpmRelease]   = spm('Ver','',1);
+
+disp(['Using ',SpmVersion,' release ',SpmRelease]) 
+ 
+dbstop if error % enter debug mode if an error occurs
+
+start_dir=pwd;
+
+% Select a text file which directs this program to the subject files
+studylistfile = spm_select(1,'mat','Select subject''s studylist file');
+if length(studylistfile) == 0,
+	disp('No studylist file selected; batch_SOCK will now exit');
+	diary off
+	return
+end
+
+%%%%%%% Facilitate compatibility with iBrain Analysis Toolbox for SPM (iBT) v3.6 studylist files by adapting that code to read the studylist file
+
+ f = fopen(studylistfile);             
+   s = textscan(f,'%s','delimiter','\r\n','CommentStyle', '#'); % Read the whole file into variable s, with each line a separate cell, ignoring comments
+ fclose(f);
+ s = cellstr(s{1});
+ num_rows = size(s,1);
+
+ for i=1:num_rows,
+   if size(s{i},1) > 0
+     studyLine=textscan(s{i},'%q','CommentStyle', '#'); % Read text of each line into separate fields (supports quoting of delimiter characters)
+     studyLine=studyLine{1};
+   else studyLine=''; end;
+   num_cols=size(studyLine,1);
+   
+%%%%%%% End of code adapted from iBrain Analysis Toolbox for SPM
+%% but note that we are still within the for i=1:num_rows....
+
+   if num_cols > 0
+    % There are various possibilities for the column identities in iBT studylist files, depending on the number of columns present:    
+    switch num_cols
+	case 1,
+ 		locCol=1;pickStartCol=0;pickEndCol=0;wildCol=0; % Not an iBT format file
+	case 4,
+ 		locCol=1;pickStartCol=2;pickEndCol=3;wildCol=4; % Not an iBT format file
+	case 7,
+ 		IDcol=1;masterCol=2;rawCol=3;locCol=4;taskCol=5;pickStartCol=6;pickEndCol=7;wildCol=0; % iBT format
+	case 8,
+ 		IDcol=1;masterCol=2;rawCol=3;locCol=4;taskCol=5;pickStartCol=6;pickEndCol=7;wildCol=8; % iBT format + wildCol
+	case 10,
+ 		IDcol=1;masterCol=2;rawCol=3;locCol=4;taskCol=5;pickStartCol=6;pickEndCol=7;xCol=8;yCol=9;zCol=10;wildCol=0; % iBT format		
+	case 11,
+ 		IDcol=1;masterCol=2;rawCol=3;locCol=4;taskCol=5;pickStartCol=6;pickEndCol=7;xCol=8;yCol=9;zCol=10;wildCol=11; % iBT format + wildCol	
+	otherwise,
+		error(['batch_SOCK found unsupported number of columns (fields per line) in studylist file ' studylistfile]);
+    end; % switch		
+
+    loc = studyLine{locCol}; % All studylists must have at least this field.
+    if ( wildCol ~= 0 ), inputWild = studyLine{wildCol}; else inputWild=default_preSOCK_image_wild; end
+    if ( pickStartCol ~= 0 ), pickStart = str2num(studyLine{pickStartCol}); else pickStart=default_pickStart; end
+    if ( pickEndCol ~= 0 ), pickEnd = str2num(studyLine{pickEndCol}); else pickEnd=default_pickEnd; end
+ 
+    cd(loc); % Go to the input directory
+    disp([datestr(now), ' - Commencing SOCK processing in ', loc]);
+
+    %Get the TR if available 
+    infoFile = '_header_info.txt';
+    [present, value] = iBT_info(infoFile, 'TR(s)', 1);
+    if present == 1,
+   	   TR = value;
+   	   disp( ['According to the ' infoFile ' the TR is ' num2str(TR)] );
+	   TR_known = 1;
+    else
+   	   TR = default_TR;
+   	   disp( ['Unable to read TR from ' infoFile '. Assuming TR is ' num2str(TR)] );
+	   TR_known = 0;
+    end 
+
+    if preSOCK_image_is4D == 0,
+	% Merge the input files into a 4D NIfTI file ready for Melodic.
+	[folder,name,ext]=fileparts(inputWild);
+	clean_name = strrep(name,'*','_');
+	clean_name = strrep(clean_name,'?','_');
+	clean_name_prefix=clean_name; % We'll use this later when splitting results into 3D images.
+	if (pickStart == 1) && (pickEnd==0)
+		pickString='all'
+	elseif pickEnd == 0, 	
+		pickString=sprintf('%0i-',pickStart);
+	else
+		pickString=sprintf('%0i-%0i',pickStart,pickEnd);
+	end
+	clean_name = [clean_name '_' pickString];
+	name_merged_imgs = [clean_name '.nii.gz']; % Filename of the merged images to be processed. We don't re-create it if it already exists (unless START_AGAIN is set)
+	exist_merged_imgs = dir(name_merged_imgs);
+	if START_AGAIN || (length(exist_merged_imgs) == 0)
+   	   if (length(exist_merged_imgs) ~= 0), 
+   		   disp(sprintf('Merged data for subject %s already exists, however START_AGAIN is set so re-creating...\n', loc));
+   	   end
+	   images_to_merge = dir(inputWild);
+	   if (length(images_to_merge) == 0)
+	   	error(['Unable to find any files matching "' inputWild '" in "' loc '"']);
+	   end
+	   if (pickStart == 1) && (pickEnd==0)
+	   	merge_list = inputWild; % Doing all so no need to construct a list
+	   else
+	   	merge_list=''; % initialise
+		if pickEnd == 0, 
+			pickEnd_actual=size(images_to_merge,1);
+		else
+			pickEnd_actual=min([pickEnd size(images_to_merge,1)]);
+			if pickEnd_actual ~= pickEnd,
+				disp(sprintf('End of image pick range was %0i, however only found %0i matching files.',pickEnd,pickEnd_actual ));
+				error('Insufficient images found to satisfy pick range. Unable to continue.');
+			end
+		end
+	   	for line=pickStart:pickEnd_actual,
+	   		merge_list = [merge_list sprintf('%s ',images_to_merge(line).name)];
+	   	end
+	   end
+	   
+	   if TR_known == 1, tOption='-tr'; else tOption ='-t'; end % Only write the TR to the image header if we are really confident of it.
+   	   command_merge = strcat(['fslmerge', ' ', tOption, ' ', clean_name, ' ',  merge_list]);
+   	   if TR_known == 1, command_merge = [command_merge ' ' num2str(TR) ]; end % Only write the TR to the image header if we are really confident of it.
+   	   command_merge = char(command_merge);
+	   disp('Creating 4D data file...');
+   	   unix(command_merge); % We hope the command line length is not too long. Should really check.
+	else
+   	   disp(sprintf('Merged data %s already exists, will re-use it...\n', fullfile(loc,name_merged_imgs)));
+	end
+    else
+   	name_merged_imgs = dir(inputWild);
+	if size(name_merged_imgs,1) > 1
+		error('Found more than one file matching specified 4D image filename. Is your data really 4D? If not, please set preSOCK_image_is4D to 0.');
+	elseif size(name_merged_imgs,1) < 1
+		error(['Unable to find file matching specified 4D image wildcard: "' inputWild '" in "' loc '"']);
+	end
+	name_merged_imgs = name_merged_imgs.name;
+	[folder,clean_name,ext]=fileparts(name_merged_imgs);
+	if strcmp(ext,'.gz') % then still need to remove the .nii extension...
+		[folder,clean_name,ext]=fileparts(clean_name);
+	end
+    end % if preSOCK_image_is4D == 0,
+		
+	% Run Melodic
+        name_melodic_dir = [clean_name '.ica'];
+	exist_melodic_dir = dir(name_melodic_dir);
+	if length(exist_melodic_dir) == 0
+		disp(sprintf('Running Melodic ICA on %s\n', loc));
+		
+		% If you have a melodic 
+		try, command_pre_melodic = char(command_pre_melodic); catch command_pre_melodic = char(''); end
+		
+		command_melodic = strcat('melodic --in=', name_merged_imgs, ' --report --tr=', num2str(TR, '%0.1f'), {' '}, '--Oall -v');
+		command_melodic = char(command_melodic);
+		unix([command_pre_melodic command_melodic]);
+	else
+		disp(sprintf('A Melodic directory for subject %s already exists...', loc));
+		disp(sprintf('If you want to re-run Melodic, delete the old %s folder...\n',name_melodic_dir));
+	end
+	
+	% Run SOCK
+	SOCK('batch_SOCK',fullfile(loc,name_melodic_dir))
+
+	dir_ICA = pwd;	
+	% Identify the artifacts from the SOCK analysis	
+	denoised_data_exist = dir('denoised_data.nii.gz');
+	load IC
+	len_ICs = length(IC.cat(:));
+	definite_artifact_ICs = find(IC.cat(:) == 3); 
+	len_definite_artifacts = length(definite_artifact_ICs);
+	if  len_definite_artifacts > 0,
+		definite_artifact_ICstring = char(sprintf('%i,',definite_artifact_ICs));
+		definite_artifact_ICstring=definite_artifact_ICstring(1:end-1); %remove trailing comma
+		disp(sprintf('The following %0i of %0i components were identified as definite artifacts by SOCK:\n %s\n',len_definite_artifacts,len_ICs,definite_artifact_ICstring));
+	else
+		disp('None of the %0i componenets were identified as definite artifacts by SOCK.'); % This would be unexpected, given the adaptive nature of the SOCK algorithm.
+	end
+	possible_artifact_ICs = find(IC.cat(:) == 2); 
+	len_possible_artifacts = length(possible_artifact_ICs);
+	if  len_possible_artifacts > 0,
+		possible_artifact_ICstring = char(sprintf('%i,',possible_artifact_ICs));
+		possible_artifact_ICstring=possible_artifact_ICstring(1:end-1); %remove trailing comma
+		disp(sprintf('The following %0i of %0i components were identified as possible artifacts by SOCK:\n %s\n',len_possible_artifacts,len_ICs,possible_artifact_ICstring));
+	else
+		disp('None of the %0i componenets were identified as possible artifacts by SOCK.'); % This would be unexpected, given the adaptive nature of the SOCK algorithm.
+	end
+	unlikely_artifact_ICs = find(IC.cat(:) == 1); 
+	len_unlikely_artifacts = length(unlikely_artifact_ICs);
+	if  len_unlikely_artifacts > 0,
+		unlikely_artifact_ICstring = char(sprintf('%i,',unlikely_artifact_ICs));
+		unlikely_artifact_ICstring=unlikely_artifact_ICstring(1:end-1); %remove trailing comma
+		disp(sprintf('The following %0i of %0i components were identified as unlikely artifacts by SOCK:\n %s\n',len_unlikely_artifacts,len_ICs,unlikely_artifact_ICstring));
+	else
+		disp('None of the %0i componenets were identified as unlikely artifacts by SOCK.'); % This would be unexpected, given the adaptive nature of the SOCK algorithm.
+	end
+		
+	if AGGRESSIVE_ARTIFACT_CLASSIFICATION == 1,
+		artifact_ICstring = sprintf('%i,',find(IC.cat(:) >= 2));
+		len_artifacts = length(definite_artifact_ICs) + length(possible_artifact_ICs);
+		if len_artifacts > 0
+			disp(sprintf('The %0i definite and possible artifact components will be regressed out when reconstructing the denoised time-series.',len_artifacts));
+		end
+	else
+		artifact_ICstring = definite_artifact_ICstring;
+		len_artifacts = length(definite_artifact_ICs);
+		if len_artifacts > 0
+			disp(sprintf('The %0i definite artifact components will be regressed out when reconstructing the denoised time-series.',len_artifacts));
+		end
+	end
+		
+	% Reconstruct the fMRI time series removing the artifact ICs 
+	if START_AGAIN || RECONSTRUCT_AGAIN || (length(denoised_data_exist) == 0)
+	
+		disp(sprintf('Reconstructing denoised time-series for subject %s\n', loc));
+	
+		gui_flag = melodic_gui(dir_ICA);
+		
+		if gui_flag == 1
+			command_denoise = 'fsl_regfilt -i filtered_func_data -o denoised_data -d filtered_func_data.ica/melodic_mix -f ';
+		else
+			command_denoise = ['fsl_regfilt -i ../' clean_name ' -o denoised_data -d melodic_mix -f '];
+		end	
+		command_denoise = strcat(command_denoise, ' " ', artifact_ICstring, '" ');
+		disp(['Current directory is ' pwd]);
+		disp(command_denoise);	
+		unix(command_denoise);
+	else
+		disp(sprintf('Denoised data for subject %s already exists...\n', loc));
+	end
+
+    if preSOCK_image_is4D == 0, %then we will split result back up into 3D images.
+
+	% Make tmp dir to copy denoised images into and move denoised_data.nii.gz into this directory
+	filename = 'denoised_imgs';
+	exist_other_imgs_dir = dir(filename);
+	if length(exist_other_imgs_dir) == 0
+		unix_script_name = strcat('mkdir',{' '},filename);
+		unix(char(unix_script_name));
+	end
+
+	unix_script_name = strcat('cp -p denoised_data.nii.gz', {' '}, filename);
+	unix(char(unix_script_name));
+	cd(filename)
+
+	% Split the de-noised image in time
+	exist_split_denoised_imgs = dir('split_denoised_images.mat');
+
+	if START_AGAIN || (length(exist_split_denoised_imgs) == 0)
+		disp(sprintf('Spliting de-noised 4D image into 3D images for subject %s\n', loc));
+		command_split = ['fslsplit denoised_data.nii.gz d' clean_name_prefix ' -t'];
+		unix(command_split);
+		split_denoised_images = 1;
+   		save split_denoised_images;
+	else
+		disp(sprintf('Split denoised data for subject %s already exists...\n', loc));
+	end
+
+	% Delete the denoised .nii.gz file (as it already exists in the ICA directory)
+	delete denoised_data.nii.gz;
+
+	if OUTPUT_NIFTI_PAIR == 1,
+	  % Convert split files into NIFTI_PAIR format
+	
+	  exist_convert_to_NIFTI_pair = dir('convert_to_NIFTI_pair.mat');
+	
+	  if START_AGAIN || (length(exist_convert_to_NIFTI_pair) == 0)
+		all_dswa = dir(['d' clean_name_prefix '*.nii.gz']);
+		no_denoised_imgs = length(all_dswa);
+
+		unix_script_name1 = 'fslchfiletype NIFTI_PAIR';	
+		for k=0:9
+			filename = strcat(['d' clean_name_prefix '000',num2str(k),'.nii.gz']);
+			command = sprintf('%s %s',unix_script_name1,filename);
+			unix(command);
+		end
+	
+		if no_denoised_imgs < 100	
+			for k1=10:no_denoised_imgs-1
+				filename1 = strcat(['d' clean_name_prefix '00',num2str(k1),'.nii.gz']);
+				command1 = sprintf('%s %s',unix_script_name1,filename1);
+				unix(command1);
+			end
+		else
+			for k1=10:99
+				filename1 = strcat(['d' clean_name_prefix '00',num2str(k1),'.nii.gz']);
+				command1 = sprintf('%s %s',unix_script_name1,filename1);
+				unix(command1);
+			end
+
+			if no_denoised_imgs >= 100
+				for k1=100:no_denoised_imgs-1
+					filename1 = strcat(['d' clean_name_prefix '0',num2str(k1),'.nii.gz']);
+					command1 = sprintf('%s %s',unix_script_name1,filename1);
+					unix(command1);
+				end
+			end
+
+			if no_denoised_imgs >= 1000
+				for k1=1000:no_denoised_imgs-1
+					filename1 = strcat(['d' clean_name_prefix ,num2str(k1),'.nii.gz']);
+					command1 = sprintf('%s %s',unix_script_name1,filename1);
+					unix(command1);
+				end
+			end
+		end
+	  % Save a .mat file indicating that the converting of denoised images has been done
+		convert_to_NIFTI_pair = 1;
+   		save('convert_to_NIFTI_pair.mat','convert_to_NIFTI_pair');
+	  else
+		disp(sprintf('Denoised data for subject %s is already converted in NIFTI_PAIR format...\n', loc));
+	  end
+	end; %if OUTPUT_NIFTI_PAIR == 1
+    end; % if preSOCK_image_is4D == 0
+    % Uncomment line below to save a .mat file with all our variables as a record of what has been done - might be useful for debugging:
+    % save('batch_SOCK_variables.mat');
+    disp([datestr(now), ' - Completed SOCK processing in ', loc]);
+    cd(start_dir);	
+   end % if num_cols > 0
+  end % for i=1:num_rows,
+
+diary off
+
+return;  

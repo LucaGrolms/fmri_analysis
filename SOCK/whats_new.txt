@@ -1,0 +1,93 @@
+
+Recent changes to SOCK
+---------------------------------------------------------
+2018-09-25 (v1.4d):
+  (DFA)	Use fullfile rather than strcat for more reliable
+  	path construction. Previously might have trouble
+	finding mean.img if running SOCK from the GUI for
+	an existing MELODIC ICA folder.
+
+2018-04-11: 
+  (DFA)	Acknowledge funding sources in Readme.txt
+
+2017-11-28 (v1.4c):
+  (DFA) Studylist files can now have # comments, quoted filenames,
+        and auto-detected line-specific field count. Compatible with
+	studylist files from iBrain Analysis Toolbox for SPM v3.6.
+
+2017-05-26 (v1.4):
+  (DFA) More robust to finding SPM's TPM.nii for use in segmentation.
+  (DFA) Support studylist files from iBrain Analysis Toolbox for SPM,
+        optionally with additional wildcardString Column.
+
+2015-11-12 (v1.4beta):
+  (DFA) Added support for SPM12.
+  (DFA) Display component numbers in all classification categories 
+	  (incl. previously undocumented "possible artifact" category)
+  (DFA) New AGRESSIVE_ARTIFACT_CLASSIFICATION flag allows denoising
+	  regression to include the "possible artifact" category
+  (DFA) Put more effort into finding where SOCK is installed so 
+	  less likely to need to edit this script.
+  (DFA) Use diary command to log matlab session output to a file	
+
+2015-06-19 (v1.3a):
+  (DFA) batch_SOCK: Moved genpath line earlier so iBT_info.m can be found.
+  (DFA) batch_SOCK: Display component numbers of identified artifacts to screen.
+  
+2015-06-16 (v1.3): 
+  (DFA) New batch_SOCK function completely automates the application of SOCK as 
+        a pre-processing noise filter.
+  (DFA) SOCK now uses NIFTI_PAIR format internally, rather than ANALYZE.
+  
+2015-02-10 (v1.2): 
+  (DFA) A change in the kmeans function in Matlab 2014a exercised a bug in
+  	SOCK_measures/ps_measure_label.m that would cause a crash. There was a
+	 missing transpose of sum_ps_matrix when passed to kmeans(). Prior
+	 versions of Matlab gracefully dealt with this and still produced the
+	 correct answer. Bug fixed in new SOCK version, lines 53 & 100 of
+	 ps_measure_label.m: sum_ps_matrix is now sum_ps_matrix'
+  (DFA) SOCK was writing temporary files to the SOCK distribution folder. Now
+	SOCK creates a uniquely named temporary folder in the usual location for
+	the operating system, and removes it upon completion.
+  (DFA) SOCK now enters debug mode if an error occurs (dbstop instruction, 
+  	line 38 of SOCK_main.m)
+  (DFA) Switched to universal date format in version file 
+  	(i.e. 2nd line was dd.mm.yyyy now yyyy-mm-dd).
+		  		
+2014-02-26 (v1.1):(KB) Changed the following code in fmristat/locmax.m at lines 256 & 261: 
+		  Old code: rankrsl(iuclmrsl)=1:len;
+			     ...
+			     lm=[lm rankrsl(jclmid)' uclmvol(jclmid)' uclmrsl(jclmid)'];
+
+		  New code: rankrsl(1,iuclmrsl)=1:len;
+			     ...
+                             lm=[lm rankrsl(1,jclmid)' uclmvol(1,jclmid)' uclmrsl(1,jclmid)'];
+
+		  Changed the following code in SOCK_measures/smoothness_measure_func.m, lines 106-122:
+ 		  New code:
+		  if mod(x,2) == 0
+   			x_range = -floor(x/2)+1:floor(x/2);
+  		  else
+			x_range = -floor(x/2):floor(x/2);
+   		  end
+
+   		  if mod(y,2) == 0
+   			y_range = -floor(y/2)+1:floor(y/2);
+   		  else
+			y_range = -floor(y/2):floor(y/2);
+  		  end
+
+   		  if mod(z,2) == 0
+			z_range = -floor(z/2)+1:floor(z/2);
+   		  else
+			z_range = -floor(z/2):floor(z/2);
+   		  end
+   		  [X,Y,Z] = meshgrid(y_range,x_range,z_range);
+   		  D = (X.^2)./(a^2) + (Y.^2)./(b^2) + (Z.^2)./(c^2);
+			
+2013-07-16 (v1.0): (DFA) Tidied up copyright notices and
+		   licence information for the public 
+		   release of SOCK version 1.0.
+		   
+2013-07-02 (pre-release): (KB) Added GNU Licence.
+2013-06-24 (pre-release): (KB) Improved the documentation.
