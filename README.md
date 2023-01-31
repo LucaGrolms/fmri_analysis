@@ -1,5 +1,9 @@
-# support_fmri_master
-Pipelines, sricpts, descriptions and dependencies to bulid 4D Nifty files, run ICA, identify artifacts and denosing 
+## Anwendung SOCK (Spatially Organized Component Klassifikator) (Bhaganagarapu et al., 2013)
+Hier werden die Probleme und Anpassungen zur Verwendung von SOCK (Spatially Organized Component Klassifikator) genauer beschrieben und dargestellt.
+
+Eine schriftliche Darstellung und Screenshots sind in dem Ordner "Dokumentation" zu finden.
+
+Die Software kann hier heruntergeladen werden: https://www.nitrc.org/projects/sock/
 
 ## Used components
 - Matlab R2022
@@ -8,11 +12,10 @@ Pipelines, sricpts, descriptions and dependencies to bulid 4D Nifty files, run I
 - SPM 12
 - SOCK
 
-## Enviorment
+## Enviornment
 VMWare Virtual Machine 
 - CentOS 7
 
 ## Installation
-Within the virtual machine instance, running on a Windows10 host system, the decribeded components are installed.
-In order to be able to use the extensive data from test subjects, an external USB hard drive including the subject scans 
-was also supplied.
+Innerhalb der VM-Instanz, die auf einem Windows10-Hostsystem läuft, werden die beschriebenen Komponenten installiert.
+Um die großen Datenmengen von Probanden nutzen zu können, wird eine externe USB-Festplatte genutzt.
