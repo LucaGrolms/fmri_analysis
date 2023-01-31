@@ -80,7 +80,7 @@ command_melodic = strcat('melodic6 --in=', name_merged_imgs, ' --report --tr=', 
 ~~~
 
 ## Report Values
-Werden mit FSL 5 / meldodic 3.14 die ICA durchgeführt, ergeben sich im weiteren Batch Ablauf von batchSOCK.m Problemstellungen mit den Werten in ./report/f1.txt, welche nicht mehr dem von SPM/Matlab erwarteten Format entsprechen. 
+Werden mit FSL 5 / melodic 3.14 die ICA durchgeführt, ergeben sich im weiteren Batch Ablauf von batchSOCK.m Problemstellungen mit den Werten in ./report/f1.txt, welche nicht mehr dem von SPM/Matlab erwarteten Format entsprechen. 
 ~~~matlab
   FWHM_8_img___all.ica/melodic_pcaE
   FWHM_8_img___all.ica/melodic_pcaD
