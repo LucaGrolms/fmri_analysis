@@ -1,19 +1,19 @@
 # Aufgabenstellung
-Aus den vorliegenden Subject Scans, welche nach Patienten und Gesunde unterteilt vorliegen, sollte im ersten Step eine ICA pro Subject durchgeführt werden. Je Subject liegen 590 spezifische NIFTI images files (.nii) vor. 
+Aus den vorliegenden Subject Scans, welche nach Patienten und Gesunde unterteilt vorliegen, sollte im ersten Step eine ICA pro Subject durchgeführt werden. Je Subject liegen 590 spezifische NIFTI Images files (.nii) vor. 
 
 Für die Durchführung der ICA wurde aus der FSL Toolbox das Tool "melodic" ausgewählt.
 Beispielhaft wird eine ICA melodic Aufruf wie folgt ausgeführt:
 ~~~
 melodic -i FWHM_8_img_sub-1017.nii.gz -o FWHM_8_img_sub-1017-1017.ica
 ~~~
-Hierbei wird davon ausgegangen, das das relevante Input file als 4D NIFTI file vorliegt.
+Hierbei wird davon ausgegangen, dass das relevante Input file als 4D NIFTI file vorliegt.
 Da aber all 590 Subject Scans als 3D NIFTI files vorliegen, muss vorher eine Zusammenführung der Scans in ein 4D Image file durchgeführt werden.
 
 Hierfür kann aus dem FSL Toolset das Tool "fslmerge" genutzen werden. Beispielhaft wäre dieser Aufruf:
 ~~~
  fslmerge -t FWHM_8_img_sub-1017.nii FWHM_8_img_001.nii FWHM_8_img_002.nii ... FWHM_8_img_590.nii
 ~~~
-Hierbei müssen aber alle 3D filenames expliziet angegeben werden, das "..." ist nicht erlaubt, dient hier nur der Verdeutlichung. Um alle relevanten files in einem folder einfacher ermitteln zu können, stellt FSL eine weiteren Tool "imglob" bereit. imglob listet alle Image files in einem Folder mit ihren Namen auf.
+Hierbei müssen aber alle 3D filenames expliziet angegeben werden, das "..." ist nicht erlaubt, dient hier nur der Verdeutlichung. Um alle relevanten Files in einem folder einfacher ermitteln zu können, stellt FSL ein weiteres Tool "imglob" bereit. imglob listet alle Image-Files in einem Folder mit ihren Namen auf.
 ~~~
 imglob *
 ~~~
@@ -23,20 +23,20 @@ fslmerge -t FWHM_8_img_sub-1017.nii $(imglob *)
 ~~~
 Nach dem Durchlauf von fslmerge liegt dann, das für melodic relevante 4D image file FWHM_8_img_sub-1017.nii.gz entsprechend vor.
 
-Alternativ zu diesen zwei Schritten via FSL Toolbox, kann auch SOCK genutzt werden. Innerhalb von SOCK existeren entsprechende Matlab Scripte (.m) welche gesamtheitlich eingesetzt werden können (batchSOCK.m) oder auch nur in Teilschritten (SOCK.m), wenn gewünscht.
+Alternativ zu diesen zwei Schritten via FSL Toolbox, kann auch SOCK genutzt werden. Innerhalb von SOCK existeren entsprechende Matlab Scripte (.m), welche gesamtheitlich eingesetzt werden können (batchSOCK.m) oder auch nur in Teilschritten (SOCK.m), wenn gewünscht.
 - Gesamtheitlich bedeutet:  
-Zusammenführen der vorliegenden 3D Images zu einem 4D Images, Durchführung der ICA, Durchführung der Artifakte Ermittlung, Denoising und final das Aufsplitten der des Gesamt Denoising Image wieder in 3D Images .img und .hdr.
+Zusammenführen der vorliegenden 3D Images zu einem 4D Image, Durchführung der ICA, Durchführung der Artifaktermittlung, Denoising und final das Aufsplitten des gesamt denoised Image wieder in 3D Images .img und .hdr.
 - In Teilschritten bedeutet:  
-Es kann auch nur eine Klassifizierung vorgenommen, wenn vorher bereits eine Zusammenführt der 3D Images zu einem 4 D Images durchgeführt wurde. Hierfür wird dann nur das Script SOCK.m aufgerufen. Dieses führt nach der Klassifizerung aber auch kein Denoising durch.
+Es kann auch nur eine Klassifizierung vorgenommen, wenn vorher bereits eine Zusammenführung der 3D Images zu einem 4D Images durchgeführt wurde. Hierfür wird dann nur das Script SOCK.m aufgerufen. Dieses führt nach der Klassifizerung aber auch kein Denoising durch.
 
 ## Nutzung von SOCK V1.4d
 
-Bei der ersten Nutzung von SOCK kam ist in Gesamtheitliche Ablauf zu Problemen, welche sich zuerst nicht final erklären liesen. So wurden bei den durchgeführten Durchläufen, nicht die für die weitere Verarbeitung benötigten mean.img files erzeugt.
-Die entsprechenden Analysen führten dann dazu, das bei der ersten gesamtlichen Linux basierten Installation aller Komponenten, die aktuelle FSL Version 6 installiert wurde. Im Weiteren wurde festgestellt, da sich zwischen der FSL Version 5 und 6 anscheinend einige gravierende Änderungen an den intergrieten Funktionen/Tools ergeben haben, welche zu dem entsprechenden Fehlverhalten im SOCK Batch-Ablauf geführt haben. Beispielhaft kann hier die genutzt Funktion "fslchfiletype" genannt werden, aber auch weitere Funktionen unterscheiden sich in FSL 5 und FSL 6.
+Bei der ersten Nutzung von SOCK kam es im gesamtheitlichen Ablauf zu Problemen, welche sich zuerst nicht final erklären ließen. So wurden bei den durchgeführten Durchläufen nicht die für die weitere Verarbeitung benötigten mean.img files erzeugt.
+Die entsprechenden Analysen führten dann dazu, dass bei der ersten gesamtheitlichen Linux basierten Installation aller Komponenten die aktuelle FSL Version 6 installiert wurde. Im Weiteren wurde festgestellt, dass sich zwischen der FSL Version 5 und 6 anscheinend einige gravierende Änderungen an den intergrieten Funktionen/Tools ergeben haben, welche zu dem entsprechenden Fehlverhalten im SOCK Batch-Ablauf geführt haben. Beispielhaft kann hier die genutzt Funktion "fslchfiletype" genannt werden, aber auch weitere Funktionen unterscheiden sich in FSL 5 und FSL 6.
 
-Somit wurde auf der relevanten Umgebung neben FSL 6 auch FSL 5 installiert und innerhalb der Matlab Pfade wurde FSL 5 definiert. 
+Somit wurde auf der relevanten Umgebung neben FSL 6 auch FSL 5 installiert und innerhalb der Matlab-Pfade wurde FSL 5 definiert. 
 
-Beim Gesamtheitlichen Ablauf via batchSOCK.m und einer hohen Anzahl an generierten ICA maps, für das relevante Subject, kam es beim Denoising Prozess zu Abrüchen aufgrund von Memory Allocation Problemen. 
+Beim Gesamtheitlichen Ablauf via batchSOCK.m und einer hohen Anzahl an generierten IC-Maps für das relevante Subject, kam es beim Denoising Prozess zu Abbrüchen aufgrund von Memory Allocation Problemen. 
 
 ~~~matlab
 fsl_regfilt -i ../FWHM_8_img___all -o denoised_data -d melodic_mix -f "1,3,4,6,9,11,13,15,17,18,20,21,25,29,31,32,33,34,38,45,47,48,50,52,54,55,63,64,66,69,75,76,77,88,91,95,100,102,104,105,106,116,117,120,124,126,127,128,129,131": Killed
@@ -46,15 +46,15 @@ fsl_regfilt -i ../FWHM_8_img___all -o denoised_data -d melodic_mix -f "1,3,4,6,1
 cp: cannot stat ‘denoised_data.nii.gz’: No such file or directory
 ~~~
 
-Da alle Abläufe in einer virtuellen Linux Umgebung ausgeführt werden, wurde nochmals der Memory für diese VM Instanz auf 13GB erhöht und auf der Linux OS Ebene wurde ein cronjob etabliert, welcher alle 20 min. den Memory Cache/Pages leert.
+Da alle Abläufe in einer virtuellen Linux Umgebung ausgeführt werden, wurde nochmals der Memory für diese VM Instanz auf 13 GB erhöht und auf der Linux OS Ebene wurde ein cronjob etabliert, welcher alle 20 min. den Memory Cache/Pages leert.
 ~~~
 */20 * * * * root sync; echo 1 > /proc/sys/vm/drop_caches
 ~~~
 
-Hiernach konnten auch die Denoised Images für Subjects mit vielen ICA maps (z. Bsp. 242) erzeugt werden.
+Hiernach konnten auch die Denoised Images für Subjects mit vielen IC-Maps (z. Bsp. 242) erzeugt werden.
 
 ### Default TR
-Der TR wird im batchSOCK.m für die relvanten Images der Subjects definiert. Sollen spezifische TR für die Abläufe angewandt werden, so sehen die SOCK Scripte hierzu vor, das in den Subject Folder nach einer entsprechenden Definitionsdatei gesucht wird "_header_info.txt". Damit diese Datei nicht in jeden Subject Folder hinterlegt werden musste, wurde folgende Anpassung in dem SOCK Script iBT_info.m vorgenommen ...
+Die TR wird im batchSOCK.m für die relvanten Images der Subjects definiert. Sollen spezifische TR für die Abläufe angewandt werden, so sehen die SOCK-Scripte hierzu vor, dass in den Subject Foldern nach einer entsprechenden Definitionsdatei gesucht wird "_header_info.txt". Damit diese Datei nicht in jeden Subject Folder hinterlegt werden musste, wurde folgende Anpassung in dem SOCK Script iBT_info.m vorgenommen ...
 ~~~matlab
 fsettings_is_OK = 0; % Initialise
   fsettings = fopen(infoFile); % open info file and read the data
@@ -74,13 +74,13 @@ fsettings_is_OK = 0; % Initialise
 ~~~  
 
 ### melodic 3.15 und FSL 6
-Bei der Nutzung des Gesamtablaufen via SOCK wird für die ICA das verfübare melodic Tool der FSL Installation genutzt. Bei den relevanten Durchläufen wurde festgestellt, das mit FSL 5 die melodic Version 3.14 genutzt wird. Die Performance war hier relativ langsam im Schritt <mark> Normalising by voxel-wise variance ....</mark> Die ICA Erstellung mit melodic 3.15 verläuft wesentlich schneller, aus diesem Grund wurde neben FSL 5 auch FSL 6 in der Umgebung installiert und das batchSOCK.m Script so modifiziert das hier (über eine Linux Sym Link "melodic6") melodic 3.15 genutzt/aufgerufen wird.
+Bei der Nutzung des Gesamtablaufes via SOCK wird für die ICA das verfübare melodic Tool der FSL Installation genutzt. Bei den relevanten Durchläufen wurde festgestellt, dass mit FSL 5 die melodic Version 3.14 genutzt wird. Die Performance war hier relativ langsam im Schritt <mark> Normalising by voxel-wise variance ....</mark> Die ICA Erstellung mit melodic 3.15 verläuft wesentlich schneller, aus diesem Grund wurde neben FSL 5 auch FSL 6 in der Umgebung installiert und das batchSOCK.m Script so modifiziert, dass hier (über eine Linux Sym Link "melodic6") melodic 3.15 genutzt/aufgerufen wird.
 ~~~matlab
 command_melodic = strcat('melodic6 --in=', name_merged_imgs, ' --report --tr=', num2str(TR, '%0.1f'), {' '}, '--Oall -v');
 ~~~
 
 ## Report Values
-Werden mit FSL 5 / meldodic 3.14 die ICA durchgeführt, ergeben sich in Weiteren Batch Ablauf von batchSOCK.m Problemstellungen mit den Werten in ./report/f1.txt, welche nicht mehr dem von SPM/Matlab erwarten Format entsprechen. 
+Werden mit FSL 5 / meldodic 3.14 die ICA durchgeführt, ergeben sich im weiteren Batch Ablauf von batchSOCK.m Problemstellungen mit den Werten in ./report/f1.txt, welche nicht mehr dem von SPM/Matlab erwarteten Format entsprechen. 
 ~~~matlab
   FWHM_8_img___all.ica/melodic_pcaE
   FWHM_8_img___all.ica/melodic_pcaD
@@ -172,8 +172,8 @@ Die eingesetzte Matlab "kmeans" Funktion erforderte die zusätzliche Installatio
 ~~~   
 
 # SPM 12
-Für die weiteren Verabeitung der Denoised Images in SPM ist es notwendig die relevanten Images im 3D NIFT Format (.nii) vorliegen zu haben. SPM ist aktuell auch nicht in der Lage .nii.gz Files zu verarbeiten. Der Standard Ablauf in SOCK erzeugt aus dem Denoised Gesamt 4D Image am Ende wieder die separierten 3D Images, hier aber als .img und .hdr files. 
-Damit aus dem Gesamt 4D Denoised Image am Ende dann die relevanten NIFI .nii files erzeugt werden, wurde eine weitere Anpassung in batchSOCK.m vorgenommen.
+Für die weitere Verabeitung der Denoised Images in SPM ist es notwendig, die relevanten Images im 3D NIFTI Format (.nii) vorliegen zu haben. SPM ist aktuell nicht in der Lage .nii.gz Files zu verarbeiten. Der Standard-Ablauf in SOCK erzeugt aus dem denoised 4D Image am Ende wieder die einzelnen 3D Images, hier aber als .img und .hdr files. 
+Damit aus dem 4D Denoised Image am Ende dann die relevanten NIFTI-files erzeugt werden, wurde eine weitere Anpassung in batchSOCK.m vorgenommen.
 Der OUTPUT_NIFTI_PAIR Wert 2 wurde neu eingeführt und die Fuktionalität entsprechend erweitert. Es werden hierdurch 3D .nii.gz files erzeugt und entpackt und keine .img und .hdr files.
 ~~~matlab
 if START_AGAIN || (length(exist_split_denoised_imgs) == 0)
@@ -192,10 +192,9 @@ if START_AGAIN || (length(exist_split_denoised_imgs) == 0)
 		disp(sprintf('Split denoised data for subject %s already exists...\n', loc));
 	end
    ~~~
-   Der OUTPUT_NIFTI_PAIR Wert 2 wird am Anfang des batchSOCK.m dann entsprechend definiertc.
+   Der OUTPUT_NIFTI_PAIR Wert 2 wird am Anfang des batchSOCK.m dann entsprechend definiert.
    ~~~matlab
    OUTPUT_NIFTI_PAIR = 2;  % If 0 and if input images are 3D, then output will be as you have confingured for fsl (usually NIFTI_GZ)
 			% If 1 then output will be NIFTI_PAIR format: in this case only, filename numbering is also zero-padded so they sort more easily.
             % If 2 then output will be NIFTI format and .nii files and no .img/.hdr files  
    ~~~
-
