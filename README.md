@@ -5,7 +5,7 @@ Eine schriftliche Darstellung und Screenshots sind in dem Ordner "Dokumentation"
 
 Die Software kann hier heruntergeladen werden: https://www.nitrc.org/projects/sock/
 
-## Used components
+## Genutzte Software
 - Matlab R2022
 - fsl 5
 - fsl 6
