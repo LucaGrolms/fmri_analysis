@@ -7,8 +7,8 @@ Die Software kann hier heruntergeladen werden: https://www.nitrc.org/projects/so
 
 ## Genutzte Software
 - Matlab R2022
-- fsl 5
-- fsl 6
+- FSL 5
+- FSL 6
 - SPM 12
 - SOCK
 
