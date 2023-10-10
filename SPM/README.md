@@ -19,11 +19,11 @@ Mod8={'rating','UCS','Ex1_CS+','Ex2_CS+','Ex3_CS+','Ex1_CS-','Ex2_CS-','Ex3_CS-'
 basepathcond='/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde';
 ```
 
-- Der ImageType legt fest, ob die Input files Noised (Original) oder Denoised (nach SOCK Nutzung) sind.
-- denoisedImages gibt die Anzahl der scan files an, dieses sind in diesem Projekt immer 590
+- Der ImageType legt fest, ob die Input Files Noised (Original) oder Denoised (nach SOCK Nutzung) sind.
+- denoisedImages gibt die Anzahl der Scan Files an, dieses sind in diesem Projekt immer 590
 - basepathcond gibt an in welchem statischen Pfad die Conditionsfiles zu finden sind
 
-Als studyfile fuer siese Ablaufe sind Beispiel Files hinterlegt worden.
+Als Studyfile fuer siese Abläufe sind Beispiel Files hinterlegt worden.
 - Noised: study_file_SPM_volumes_origin.txt
 - Denoised: study_file_SPM_volumes.txt oder study_file_SPM_volumes_test.txt
 
