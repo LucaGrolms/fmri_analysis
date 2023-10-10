@@ -25,7 +25,7 @@ Um die großen Datenmengen von Probanden nutzen zu können, wird eine externe US
 Bhaganagarapu, Kaushik; Jackson, Graeme D.; Abbott, David F. (2013): An automated method for identifying artifact in independent component analysis of resting-state FMRI. In: Frontiers in human neuroscience 7, S. 343. DOI: 10.3389/fnhum.2013.00343.
 
 ## Pipelines
-Die durchgeführten SW-technischen Ablauefe werden hier einmal gesamtheitlich und in Sub-Workflow dargestellt.
+Die durchgeführten SW-technischen Abläufe werden hier einmal gesamtheitlich und in Sub-Workflow dargestellt.
 ![Pipelines](UML/Ablaeufe_all.png)
 
 ### Sub Workflow Part 1
