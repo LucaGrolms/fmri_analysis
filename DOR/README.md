@@ -18,7 +18,7 @@ subject_folders_gesunde = []
 # Liste der results folder Namen nach spm runs für denoised und noised unterschiedlich definiert
 imagetype = "noised"
 results_modification = ["rating", "UCS", "Ex1_CS+", "Ex2_CS+", "Ex3_CS+", "Ex1_CS-", "Ex2_CS-", "Ex3_CS-"]
-# Resudien file name, immer gleich in den jeweiligen results folders, bei SPM8 ResMS.img
+# Residuen file name, immer gleich in den jeweiligen results folders, bei SPM8 ResMS.img
 residuen = "ResMS.nii"
 ````
 - base_path: Hier ist der Basis Pfad hinterlegt, in dem die relevanten SPM Results gespeichert wurden.
