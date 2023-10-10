@@ -1,0 +1,26 @@
+@startuml
+title fmri Pipeline 1-st level analysis with modified conditions
+
+start
+:Read the studyfile subjects;
+:Prepare First Level Analysis SPM runs;
+:Define matlabbatch parameter (conditions, ...);
+  repeat 
+    if (denoised/noised ?) then (denoised)
+      :Read denoised images per subject;
+    else (noised)
+      :Read noised images per subject;
+    endif    
+  repeat while (denoised or noised subjets) is (repeat this for all subjects)
+repeat    
+:Run First Level Analysis;
+repeat while (all subjects - denoised/noised) is (repeat this for all subjects)
+:Create DoRs per condition;
+repeat 
+repeat
+:Substract: Model A image - Model B image;
+: Save the diff DoR images;
+repeat while (different conditions) is (do this for all 8 conditions)
+repeat while (all subjects) is (repeat this for all subjects)
+stop
+@enduml

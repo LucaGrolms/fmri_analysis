@@ -1,0 +1,3 @@
+/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Patienten/sub-1018/Ma2/func FWHM_8_img_*.nii
+/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Patienten/sub-1026/Ma2/func FWHM_8_img_*.nii
+/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Patienten/sub-1072/Ma2/func FWHM_8_img_*.nii

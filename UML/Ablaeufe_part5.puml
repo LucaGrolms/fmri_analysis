@@ -1,0 +1,33 @@
+@startuml
+title fmri Pipeline 2-nd level analysis with DoRs analytics and covariates
+
+start
+:Prepare 2nd Level Analysis SPM runs;
+repeat
+:Define 2 group with "Gesunde" and "Patienten";
+repeat
+:Load "Gesunde" DoRs in group1;
+:Load "Patienten" DoRs in group2; 
+repeat while (all subjects) is (repeat this for all subjects)
+if (covariates ? ) then (Anxiety Rating)
+:define 4 covariates group values;
+else (ASI, BDI)
+:define 2 covariates group values;
+endif
+:Run and create SPM.mat;
+:Perform SPM Estimate of SPM.mat;
+if (contrast) then (T)
+   if (T-contrasts) then (for Anxiety Rating)
+     :define 16 different contrasts;
+   else (for ASI, BDI)
+     :define 8 differnt contrasts;
+   endif
+else (F)
+ :define one F-contrast matrix (in case of Anxiety or ASI, BDI );
+endif    
+:masking = none, threshold 0.005 voxels 50;
+:Perform Result of SPM.mat;
+repeat while (for all condition DoRs) is (repeat this for all 8 conditions)
+:Use SPM and xjview to visualize the results;
+stop
+@enduml

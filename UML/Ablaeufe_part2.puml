@@ -1,0 +1,13 @@
+@startuml
+title fmri Pipeline Modify conditions
+
+start
+:Read studyfile conditions;
+ :Use Base condition files;
+repeat
+  :Modify condition file dimensions;
+  :Create and save modified condition file;
+repeat while (build different condition files) is (repeat this for all 8 conditions) 
+
+stop
+@enduml

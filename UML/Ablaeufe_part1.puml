@@ -1,0 +1,23 @@
+@startuml
+title fmri Pipeline fsl, ica and denoised
+
+start
+:Start processing read studyfile with subjects;
+repeat
+ :Noised subjects;
+ repeat 
+ :scans 3d to one 4d;
+ repeat while (all scans per subject) is (repeat this for all 590 scans/subject)
+repeat while (all subjects within studyfile) is (repeat this for all subjects)
+
+repeat
+:fsl6 melodic ICA per subject;    
+repeat while (all subjects run through) is (repeat this for all subjects)
+
+repeat
+:Find artifacts and remove;
+:Build 590 denoised scans per subject;    
+repeat while (all subjects run through) is (repeat this for all subjects)
+stop
+
+@endpuml

@@ -21,6 +21,24 @@ Innerhalb der VM-Instanz, die auf einem Windows10-Hostsystem läuft, werden die 
 Um die großen Datenmengen von Probanden nutzen zu können, wird eine externe USB-Festplatte genutzt.
 
 
-
 ## Literatur
 Bhaganagarapu, Kaushik; Jackson, Graeme D.; Abbott, David F. (2013): An automated method for identifying artifact in independent component analysis of resting-state FMRI. In: Frontiers in human neuroscience 7, S. 343. DOI: 10.3389/fnhum.2013.00343.
+
+## Pipelines
+Die durchgeführten SW-technischen Ablauefe werden hier einmal gesamtheitlich und in Sub-Workflow dargestellt.
+![Pipelines](UML/Ablaeufe_all.png)
+
+### Sub Workflow Part 1
+![Pipelines](UML/Ablaeufe_part1.png)
+
+### Sub Workflow Part 2
+![Pipelines](UML/Ablaeufe_part2.png)
+
+### Sub Workflow Part 3
+![Pipelines](UML/Ablaeufe_part3.png)
+
+### Sub Workflow Part 4
+![Pipelines](UML/Ablaeufe_part4.png)
+
+### Sub Workflow Part 5
+![Pipelines](UML/Ablaeufe_part5.png)

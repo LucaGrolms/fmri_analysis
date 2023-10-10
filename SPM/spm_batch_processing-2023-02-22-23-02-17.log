@@ -1,0 +1,1704 @@
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3952/spm_Results_ori
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3952_Ma2.mat
+
+
+------------------------------------------------------------------------
+22-Feb-2023 23:02:47 - Running job #1
+------------------------------------------------------------------------
+22-Feb-2023 23:02:47 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     23:02:47 - 22/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     23:02:47 - 22/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          23:04:51 - 22/02/2023
+22-Feb-2023 23:04:51 - Done    'fMRI model specification'
+22-Feb-2023 23:04:52 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             23:04:52 - 22/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              23:04:54 - 22/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (138094 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...5.682700e+01 [+4.25]
+  ReML Iteration 2                      :        ...2.991115e+00 [+4.50]
+  ReML Iteration 3                      :        ...1.006763e-01 [+4.75]
+  ReML Iteration 4                      :        ...2.401120e-03 [+5.00]
+
+SPM12: spm_spm (v7738)                             23:07:36 - 22/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          23:10:11 - 22/02/2023
+Done
+22-Feb-2023 23:27:29 - Done    'Model estimation'
+22-Feb-2023 23:27:29 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3952/spm_Results_ori_rating
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3952_Ma2_rating.mat
+
+
+------------------------------------------------------------------------
+22-Feb-2023 23:27:45 - Running job #1
+------------------------------------------------------------------------
+22-Feb-2023 23:27:45 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     23:27:45 - 22/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     23:27:45 - 22/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          23:30:59 - 22/02/2023
+22-Feb-2023 23:30:59 - Done    'fMRI model specification'
+22-Feb-2023 23:30:59 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             23:31:00 - 22/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              23:31:01 - 22/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (139244 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...5.534807e+01 [+4.25]
+  ReML Iteration 2                      :        ...2.928016e+00 [+4.50]
+  ReML Iteration 3                      :        ...7.769031e-02 [+4.75]
+
+SPM12: spm_spm (v7738)                             23:32:57 - 22/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          23:35:43 - 22/02/2023
+Done
+22-Feb-2023 23:53:56 - Done    'Model estimation'
+22-Feb-2023 23:53:56 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3952/spm_Results_ori_UCS
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3952_Ma2_UCS.mat
+
+
+------------------------------------------------------------------------
+22-Feb-2023 23:54:12 - Running job #1
+------------------------------------------------------------------------
+22-Feb-2023 23:54:12 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     23:54:12 - 22/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     23:54:12 - 22/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          23:57:27 - 22/02/2023
+22-Feb-2023 23:57:27 - Done    'fMRI model specification'
+22-Feb-2023 23:57:27 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             23:57:28 - 22/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              23:57:30 - 22/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (135446 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...5.731366e+01 [+4.25]
+  ReML Iteration 2                      :        ...2.994195e+00 [+4.50]
+  ReML Iteration 3                      :        ...9.588629e-02 [+4.75]
+
+SPM12: spm_spm (v7738)                             23:59:24 - 22/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          00:02:06 - 23/02/2023
+Done
+23-Feb-2023 00:19:31 - Done    'Model estimation'
+23-Feb-2023 00:19:31 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3952/spm_Results_ori_Ex1_CS+
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3952_Ma2_Ex1_CS+.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 00:19:46 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 00:19:46 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     00:19:46 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     00:19:46 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          00:22:49 - 23/02/2023
+23-Feb-2023 00:22:49 - Done    'fMRI model specification'
+23-Feb-2023 00:22:49 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             00:22:49 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              00:22:51 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (129647 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...6.491470e+01 [+4.25]
+  ReML Iteration 2                      :        ...3.408348e+00 [+4.50]
+  ReML Iteration 3                      :        ...9.167572e-02 [+4.75]
+
+SPM12: spm_spm (v7738)                             00:24:48 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          00:27:26 - 23/02/2023
+Done
+23-Feb-2023 00:44:46 - Done    'Model estimation'
+23-Feb-2023 00:44:46 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3952/spm_Results_ori_Ex2_CS+
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3952_Ma2_Ex2_CS+.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 00:45:05 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 00:45:05 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     00:45:05 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     00:45:06 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          00:48:23 - 23/02/2023
+23-Feb-2023 00:48:23 - Done    'fMRI model specification'
+23-Feb-2023 00:48:23 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             00:48:23 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              00:48:25 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (135983 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...6.118421e+01 [+4.25]
+  ReML Iteration 2                      :        ...3.404105e+00 [+4.50]
+  ReML Iteration 3                      :        ...9.495514e-02 [+4.75]
+
+SPM12: spm_spm (v7738)                             00:50:20 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          00:52:50 - 23/02/2023
+Done
+23-Feb-2023 01:10:13 - Done    'Model estimation'
+23-Feb-2023 01:10:13 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3952/spm_Results_ori_Ex3_CS+
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3952_Ma2_Ex3_CS+.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 01:10:27 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 01:10:27 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     01:10:27 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     01:10:28 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          01:13:51 - 23/02/2023
+23-Feb-2023 01:13:51 - Done    'fMRI model specification'
+23-Feb-2023 01:13:51 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             01:13:51 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              01:13:53 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (132509 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...6.233168e+01 [+4.25]
+  ReML Iteration 2                      :        ...3.175232e+00 [+4.50]
+  ReML Iteration 3                      :        ...8.815157e-02 [+4.75]
+
+SPM12: spm_spm (v7738)                             01:15:49 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          01:18:21 - 23/02/2023
+Done
+23-Feb-2023 01:35:51 - Done    'Model estimation'
+23-Feb-2023 01:35:51 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3952/spm_Results_ori_Ex1_CS-
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3952_Ma2_Ex1_CS-.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 01:36:07 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 01:36:07 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     01:36:07 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     01:36:08 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          01:38:45 - 23/02/2023
+23-Feb-2023 01:38:45 - Done    'fMRI model specification'
+23-Feb-2023 01:38:45 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             01:38:46 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              01:38:47 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (127754 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...6.494019e+01 [+4.25]
+  ReML Iteration 2                      :        ...3.432923e+00 [+4.50]
+  ReML Iteration 3                      :        ...9.212749e-02 [+4.75]
+
+SPM12: spm_spm (v7738)                             01:40:39 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          01:43:17 - 23/02/2023
+Done
+23-Feb-2023 02:00:30 - Done    'Model estimation'
+23-Feb-2023 02:00:30 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3952/spm_Results_ori_Ex2_CS-
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3952_Ma2_Ex2_CS-.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 02:00:43 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 02:00:44 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     02:00:44 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     02:00:44 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          02:03:25 - 23/02/2023
+23-Feb-2023 02:03:25 - Done    'fMRI model specification'
+23-Feb-2023 02:03:25 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             02:03:25 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              02:03:27 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (144483 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...6.006189e+01 [+4.25]
+  ReML Iteration 2                      :        ...3.337525e+00 [+4.50]
+  ReML Iteration 3                      :        ...9.397331e-02 [+4.75]
+
+SPM12: spm_spm (v7738)                             02:05:19 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          02:07:49 - 23/02/2023
+Done
+23-Feb-2023 02:25:21 - Done    'Model estimation'
+23-Feb-2023 02:25:21 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3952/spm_Results_ori_Ex3_CS-
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3952_Ma2_Ex3_CS-.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 02:25:34 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 02:25:35 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     02:25:35 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     02:25:35 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          02:28:48 - 23/02/2023
+23-Feb-2023 02:28:48 - Done    'fMRI model specification'
+23-Feb-2023 02:28:48 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             02:28:49 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              02:28:50 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (135078 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...6.206305e+01 [+4.25]
+  ReML Iteration 2                      :        ...3.368082e+00 [+4.50]
+  ReML Iteration 3                      :        ...9.724084e-02 [+4.75]
+
+SPM12: spm_spm (v7738)                             02:30:45 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          02:33:16 - 23/02/2023
+Done
+23-Feb-2023 02:50:51 - Done    'Model estimation'
+23-Feb-2023 02:50:51 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3953/spm_Results_ori
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3953_Ma2.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 02:51:05 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 02:51:05 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     02:51:05 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     02:51:05 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          02:53:59 - 23/02/2023
+23-Feb-2023 02:53:59 - Done    'fMRI model specification'
+23-Feb-2023 02:53:59 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             02:53:59 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              02:54:01 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (127185 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.327460e+02 [+4.25]
+  ReML Iteration 2                      :        ...8.415742e+01 [+4.50]
+  ReML Iteration 3                      :        ...6.868423e+00 [+4.75]
+  ReML Iteration 4                      :        ...9.068119e-01 [+5.00]
+  ReML Iteration 5                      :        ...1.213593e-01 [+5.25]
+  ReML Iteration 6                      :        ...1.670176e-02 [+5.50]
+
+SPM12: spm_spm (v7738)                             02:56:01 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          02:58:32 - 23/02/2023
+Done
+23-Feb-2023 03:15:51 - Done    'Model estimation'
+23-Feb-2023 03:15:52 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3953/spm_Results_ori_rating
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3953_Ma2_rating.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 03:16:10 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 03:16:10 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     03:16:11 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     03:16:11 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          03:19:08 - 23/02/2023
+23-Feb-2023 03:19:09 - Done    'fMRI model specification'
+23-Feb-2023 03:19:09 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             03:19:09 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              03:19:11 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (178775 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.050133e+02 [+4.25]
+  ReML Iteration 2                      :        ...6.292776e+01 [+4.50]
+  ReML Iteration 3                      :        ...6.447238e+00 [+4.75]
+  ReML Iteration 4                      :        ...9.179523e-01 [+5.00]
+  ReML Iteration 5                      :        ...1.367479e-01 [+5.25]
+  ReML Iteration 6                      :        ...2.062147e-02 [+5.50]
+
+SPM12: spm_spm (v7738)                             03:21:07 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          03:23:51 - 23/02/2023
+Done
+23-Feb-2023 03:42:27 - Done    'Model estimation'
+23-Feb-2023 03:42:27 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3953/spm_Results_ori_UCS
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3953_Ma2_UCS.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 03:42:42 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 03:42:42 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     03:42:42 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     03:42:42 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          03:44:45 - 23/02/2023
+23-Feb-2023 03:44:45 - Done    'fMRI model specification'
+23-Feb-2023 03:44:45 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             03:44:45 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              03:44:47 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (125722 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.328764e+02 [+4.25]
+  ReML Iteration 2                      :        ...8.380860e+01 [+4.50]
+  ReML Iteration 3                      :        ...6.912653e+00 [+4.75]
+  ReML Iteration 4                      :        ...9.195104e-01 [+5.00]
+  ReML Iteration 5                      :        ...1.241388e-01 [+5.25]
+  ReML Iteration 6                      :        ...1.723088e-02 [+5.50]
+
+SPM12: spm_spm (v7738)                             03:46:44 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          03:49:13 - 23/02/2023
+Done
+23-Feb-2023 04:06:47 - Done    'Model estimation'
+23-Feb-2023 04:06:47 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3953/spm_Results_ori_Ex1_CS+
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3953_Ma2_Ex1_CS+.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 04:07:00 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 04:07:00 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     04:07:00 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     04:07:00 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          04:09:39 - 23/02/2023
+23-Feb-2023 04:09:39 - Done    'fMRI model specification'
+23-Feb-2023 04:09:39 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             04:09:40 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              04:09:41 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (137859 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.412139e+02 [+4.25]
+  ReML Iteration 2                      :        ...1.006511e+02 [+4.50]
+  ReML Iteration 3                      :        ...8.178026e+00 [+4.75]
+  ReML Iteration 4                      :        ...1.121209e+00 [+5.00]
+  ReML Iteration 5                      :        ...1.557964e-01 [+5.25]
+  ReML Iteration 6                      :        ...2.237550e-02 [+5.50]
+
+SPM12: spm_spm (v7738)                             04:11:38 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          04:14:07 - 23/02/2023
+Done
+23-Feb-2023 04:32:04 - Done    'Model estimation'
+23-Feb-2023 04:32:04 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3953/spm_Results_ori_Ex2_CS+
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3953_Ma2_Ex2_CS+.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 04:32:18 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 04:32:18 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     04:32:18 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     04:32:19 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          04:34:54 - 23/02/2023
+23-Feb-2023 04:34:54 - Done    'fMRI model specification'
+23-Feb-2023 04:34:54 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             04:34:55 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              04:34:56 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (137530 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.406435e+02 [+4.25]
+  ReML Iteration 2                      :        ...9.884534e+01 [+4.50]
+  ReML Iteration 3                      :        ...7.988780e+00 [+4.75]
+  ReML Iteration 4                      :        ...1.082641e+00 [+5.00]
+  ReML Iteration 5                      :        ...1.488783e-01 [+5.25]
+  ReML Iteration 6                      :        ...2.113823e-02 [+5.50]
+
+SPM12: spm_spm (v7738)                             04:36:48 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          04:39:18 - 23/02/2023
+Done
+23-Feb-2023 04:57:13 - Done    'Model estimation'
+23-Feb-2023 04:57:13 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3953/spm_Results_ori_Ex3_CS+
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3953_Ma2_Ex3_CS+.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 04:57:27 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 04:57:27 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     04:57:27 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     04:57:27 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          05:00:09 - 23/02/2023
+23-Feb-2023 05:00:09 - Done    'fMRI model specification'
+23-Feb-2023 05:00:09 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             05:00:10 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              05:00:11 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (153285 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.219825e+02 [+4.25]
+  ReML Iteration 2                      :        ...6.724352e+01 [+4.50]
+  ReML Iteration 3                      :        ...5.555668e+00 [+4.75]
+  ReML Iteration 4                      :        ...7.027383e-01 [+5.00]
+  ReML Iteration 5                      :        ...9.074857e-02 [+5.25]
+
+SPM12: spm_spm (v7738)                             05:02:06 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          05:04:37 - 23/02/2023
+Done
+23-Feb-2023 05:22:38 - Done    'Model estimation'
+23-Feb-2023 05:22:38 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3953/spm_Results_ori_Ex1_CS-
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3953_Ma2_Ex1_CS-.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 05:22:51 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 05:22:52 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     05:22:52 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     05:22:52 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          05:25:30 - 23/02/2023
+23-Feb-2023 05:25:30 - Done    'fMRI model specification'
+23-Feb-2023 05:25:30 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             05:25:31 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              05:25:32 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (130650 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.418741e+02 [+4.25]
+  ReML Iteration 2                      :        ...1.013090e+02 [+4.50]
+  ReML Iteration 3                      :        ...8.138402e+00 [+4.75]
+  ReML Iteration 4                      :        ...1.104462e+00 [+5.00]
+  ReML Iteration 5                      :        ...1.520263e-01 [+5.25]
+  ReML Iteration 6                      :        ...2.162281e-02 [+5.50]
+
+SPM12: spm_spm (v7738)                             05:27:28 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          05:30:01 - 23/02/2023
+Done
+23-Feb-2023 05:48:12 - Done    'Model estimation'
+23-Feb-2023 05:48:12 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3953/spm_Results_ori_Ex2_CS-
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3953_Ma2_Ex2_CS-.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 05:48:25 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 05:48:25 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     05:48:25 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     05:48:26 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          05:51:15 - 23/02/2023
+23-Feb-2023 05:51:15 - Done    'fMRI model specification'
+23-Feb-2023 05:51:15 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             05:51:15 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              05:51:17 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (140204 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.323280e+02 [+4.25]
+  ReML Iteration 2                      :        ...8.137168e+01 [+4.50]
+  ReML Iteration 3                      :        ...6.661098e+00 [+4.75]
+  ReML Iteration 4                      :        ...8.748395e-01 [+5.00]
+  ReML Iteration 5                      :        ...1.169062e-01 [+5.25]
+  ReML Iteration 6                      :        ...1.603829e-02 [+5.50]
+
+SPM12: spm_spm (v7738)                             05:53:13 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          05:55:42 - 23/02/2023
+Done
+23-Feb-2023 06:14:05 - Done    'Model estimation'
+23-Feb-2023 06:14:05 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3953/spm_Results_ori_Ex3_CS-
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3953_Ma2_Ex3_CS-.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 06:14:18 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 06:14:19 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     06:14:19 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     06:14:19 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          06:17:18 - 23/02/2023
+23-Feb-2023 06:17:18 - Done    'fMRI model specification'
+23-Feb-2023 06:17:18 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             06:17:19 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              06:17:20 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (167919 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.054673e+02 [+4.25]
+  ReML Iteration 2                      :        ...5.206739e+01 [+4.50]
+  ReML Iteration 3                      :        ...4.527572e+00 [+4.75]
+  ReML Iteration 4                      :        ...5.572442e-01 [+5.00]
+  ReML Iteration 5                      :        ...7.057629e-02 [+5.25]
+
+SPM12: spm_spm (v7738)                             06:19:15 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          06:21:45 - 23/02/2023
+Done
+23-Feb-2023 06:40:09 - Done    'Model estimation'
+23-Feb-2023 06:40:09 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3955/spm_Results_ori
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3955_Ma2.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 06:40:23 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 06:40:23 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     06:40:24 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     06:40:24 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          06:43:41 - 23/02/2023
+23-Feb-2023 06:43:41 - Done    'fMRI model specification'
+23-Feb-2023 06:43:41 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             06:43:41 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              06:43:43 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (151217 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...1.763119e+02 [+4.25]
+  ReML Iteration 2                      :        ...2.559426e+01 [+4.50]
+  ReML Iteration 3                      :        ...3.201288e+00 [+4.75]
+  ReML Iteration 4                      :        ...3.753186e-01 [+5.00]
+  ReML Iteration 5                      :        ...4.947997e-02 [+5.25]
+
+SPM12: spm_spm (v7738)                             06:45:40 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          06:48:09 - 23/02/2023
+Done
+23-Feb-2023 07:06:16 - Done    'Model estimation'
+23-Feb-2023 07:06:16 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3955/spm_Results_ori_rating
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3955_Ma2_rating.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 07:06:30 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 07:06:30 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     07:06:30 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     07:06:30 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          07:09:36 - 23/02/2023
+23-Feb-2023 07:09:36 - Done    'fMRI model specification'
+23-Feb-2023 07:09:36 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             07:09:36 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              07:09:38 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (173010 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...1.306492e+02 [+4.25]
+  ReML Iteration 2                      :        ...9.223999e+00 [+4.50]
+  ReML Iteration 3                      :        ...9.828325e-01 [+4.75]
+  ReML Iteration 4                      :        ...9.240103e-02 [+5.00]
+
+SPM12: spm_spm (v7738)                             07:11:38 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          07:14:29 - 23/02/2023
+Done
+23-Feb-2023 07:34:15 - Done    'Model estimation'
+23-Feb-2023 07:34:15 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3955/spm_Results_ori_UCS
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3955_Ma2_UCS.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 07:34:29 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 07:34:29 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     07:34:30 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     07:34:30 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          07:37:18 - 23/02/2023
+23-Feb-2023 07:37:18 - Done    'fMRI model specification'
+23-Feb-2023 07:37:18 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             07:37:18 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              07:37:20 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (151281 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...1.799785e+02 [+4.25]
+  ReML Iteration 2                      :        ...2.833066e+01 [+4.50]
+  ReML Iteration 3                      :        ...3.596213e+00 [+4.75]
+  ReML Iteration 4                      :        ...4.293631e-01 [+5.00]
+  ReML Iteration 5                      :        ...5.783967e-02 [+5.25]
+
+SPM12: spm_spm (v7738)                             07:39:16 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          07:41:54 - 23/02/2023
+Done
+23-Feb-2023 08:00:46 - Done    'Model estimation'
+23-Feb-2023 08:00:46 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3955/spm_Results_ori_Ex1_CS+
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3955_Ma2_Ex1_CS+.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 08:01:05 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 08:01:05 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     08:01:05 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     08:01:05 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          08:03:09 - 23/02/2023
+23-Feb-2023 08:03:09 - Done    'fMRI model specification'
+23-Feb-2023 08:03:09 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             08:03:09 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              08:03:11 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (134583 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.010601e+02 [+4.25]
+  ReML Iteration 2                      :        ...4.343368e+01 [+4.50]
+  ReML Iteration 3                      :        ...6.188322e+00 [+4.75]
+  ReML Iteration 4                      :        ...8.293835e-01 [+5.00]
+  ReML Iteration 5                      :        ...1.283499e-01 [+5.25]
+  ReML Iteration 6                      :        ...1.926485e-02 [+5.50]
+
+SPM12: spm_spm (v7738)                             08:03:41 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          08:04:48 - 23/02/2023
+Done
+23-Feb-2023 08:23:43 - Done    'Model estimation'
+23-Feb-2023 08:23:43 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3955/spm_Results_ori_Ex2_CS+
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3955_Ma2_Ex2_CS+.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 08:23:57 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 08:23:57 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     08:23:58 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     08:23:58 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          08:26:05 - 23/02/2023
+23-Feb-2023 08:26:05 - Done    'fMRI model specification'
+23-Feb-2023 08:26:05 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             08:26:05 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              08:26:07 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (141830 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...1.930565e+02 [+4.25]
+  ReML Iteration 2                      :        ...3.581683e+01 [+4.50]
+  ReML Iteration 3                      :        ...4.894246e+00 [+4.75]
+  ReML Iteration 4                      :        ...6.284073e-01 [+5.00]
+  ReML Iteration 5                      :        ...9.241456e-02 [+5.25]
+
+SPM12: spm_spm (v7738)                             08:28:06 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          08:30:43 - 23/02/2023
+Done
+23-Feb-2023 08:49:57 - Done    'Model estimation'
+23-Feb-2023 08:49:57 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3955/spm_Results_ori_Ex3_CS+
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3955_Ma2_Ex3_CS+.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 08:50:12 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 08:50:12 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     08:50:12 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     08:50:12 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          08:52:30 - 23/02/2023
+23-Feb-2023 08:52:30 - Done    'fMRI model specification'
+23-Feb-2023 08:52:30 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             08:52:30 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              08:52:32 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (164050 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...1.463455e+02 [+4.25]
+  ReML Iteration 2                      :        ...1.122494e+01 [+4.50]
+  ReML Iteration 3                      :        ...1.260166e+00 [+4.75]
+  ReML Iteration 4                      :        ...1.282422e-01 [+5.00]
+  ReML Iteration 5                      :        ...1.437971e-02 [+5.25]
+
+SPM12: spm_spm (v7738)                             08:54:31 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          08:57:12 - 23/02/2023
+Done
+23-Feb-2023 09:16:29 - Done    'Model estimation'
+23-Feb-2023 09:16:29 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3955/spm_Results_ori_Ex1_CS-
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3955_Ma2_Ex1_CS-.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 09:16:42 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 09:16:43 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     09:16:43 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     09:16:43 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          09:19:22 - 23/02/2023
+23-Feb-2023 09:19:22 - Done    'fMRI model specification'
+23-Feb-2023 09:19:22 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             09:19:22 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              09:19:24 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (142109 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...1.910602e+02 [+4.25]
+  ReML Iteration 2                      :        ...3.420613e+01 [+4.50]
+  ReML Iteration 3                      :        ...4.570864e+00 [+4.75]
+  ReML Iteration 4                      :        ...5.734414e-01 [+5.00]
+  ReML Iteration 5                      :        ...8.221406e-02 [+5.25]
+
+SPM12: spm_spm (v7738)                             09:21:22 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          09:24:00 - 23/02/2023
+Done
+23-Feb-2023 09:44:16 - Done    'Model estimation'
+23-Feb-2023 09:44:17 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3955/spm_Results_ori_Ex2_CS-
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3955_Ma2_Ex2_CS-.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 09:44:32 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 09:44:32 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     09:44:33 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     09:44:33 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          09:46:42 - 23/02/2023
+23-Feb-2023 09:46:42 - Done    'fMRI model specification'
+23-Feb-2023 09:46:42 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             09:46:42 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              09:46:44 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (140908 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...1.944037e+02 [+4.25]
+  ReML Iteration 2                      :        ...3.817204e+01 [+4.50]
+  ReML Iteration 3                      :        ...5.246670e+00 [+4.75]
+  ReML Iteration 4                      :        ...6.789567e-01 [+5.00]
+  ReML Iteration 5                      :        ...1.007322e-01 [+5.25]
+  ReML Iteration 6                      :        ...1.450720e-02 [+5.50]
+
+SPM12: spm_spm (v7738)                             09:47:12 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          09:48:50 - 23/02/2023
+Done
+23-Feb-2023 10:08:16 - Done    'Model estimation'
+23-Feb-2023 10:08:16 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3955/spm_Results_ori_Ex3_CS-
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3955_Ma2_Ex3_CS-.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 10:08:30 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 10:08:30 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     10:08:30 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     10:08:30 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          10:10:42 - 23/02/2023
+23-Feb-2023 10:10:42 - Done    'fMRI model specification'
+23-Feb-2023 10:10:42 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             10:10:43 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              10:10:44 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (156086 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...1.695776e+02 [+4.25]
+  ReML Iteration 2                      :        ...2.117276e+01 [+4.50]
+  ReML Iteration 3                      :        ...2.756573e+00 [+4.75]
+  ReML Iteration 4                      :        ...3.319753e-01 [+5.00]
+  ReML Iteration 5                      :        ...4.491969e-02 [+5.25]
+
+SPM12: spm_spm (v7738)                             10:12:48 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          10:15:25 - 23/02/2023
+Done
+23-Feb-2023 10:34:55 - Done    'Model estimation'
+23-Feb-2023 10:34:55 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3956/spm_Results_ori
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3956_Ma2.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 10:35:09 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 10:35:09 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     10:35:09 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     10:35:09 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          10:37:21 - 23/02/2023
+23-Feb-2023 10:37:21 - Done    'fMRI model specification'
+23-Feb-2023 10:37:21 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             10:37:21 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              10:37:22 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (107870 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.277913e+02 [+4.25]
+  ReML Iteration 2                      :        ...3.394932e+01 [+4.50]
+  ReML Iteration 3                      :        ...1.037405e+00 [+4.75]
+  ReML Iteration 4                      :        ...6.159000e-02 [+5.00]
+
+SPM12: spm_spm (v7738)                             10:39:20 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          10:41:56 - 23/02/2023
+Done
+23-Feb-2023 11:01:28 - Done    'Model estimation'
+23-Feb-2023 11:01:28 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3956/spm_Results_ori_rating
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3956_Ma2_rating.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 11:01:46 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 11:01:46 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     11:01:46 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     11:01:46 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          11:04:40 - 23/02/2023
+23-Feb-2023 11:04:40 - Done    'fMRI model specification'
+23-Feb-2023 11:04:40 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             11:04:40 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              11:04:42 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (153130 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...1.798269e+02 [+4.25]
+  ReML Iteration 2                      :        ...1.193887e+01 [+4.50]
+  ReML Iteration 3                      :        ...4.180660e-01 [+4.75]
+  ReML Iteration 4                      :        ...2.092598e-02 [+5.00]
+
+SPM12: spm_spm (v7738)                             11:06:38 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          11:09:29 - 23/02/2023
+Done
+23-Feb-2023 11:30:40 - Done    'Model estimation'
+23-Feb-2023 11:30:40 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3956/spm_Results_ori_UCS
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3956_Ma2_UCS.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 11:30:54 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 11:30:54 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     11:30:55 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     11:30:55 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          11:33:39 - 23/02/2023
+23-Feb-2023 11:33:39 - Done    'fMRI model specification'
+23-Feb-2023 11:33:40 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             11:33:40 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              11:33:41 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (101740 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.359349e+02 [+4.25]
+  ReML Iteration 2                      :        ...4.104739e+01 [+4.50]
+  ReML Iteration 3                      :        ...1.208954e+00 [+4.75]
+  ReML Iteration 4                      :        ...7.453247e-02 [+5.00]
+
+SPM12: spm_spm (v7738)                             11:35:38 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          11:38:13 - 23/02/2023
+Done
+23-Feb-2023 11:57:30 - Done    'Model estimation'
+23-Feb-2023 11:57:30 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3956/spm_Results_ori_Ex1_CS+
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3956_Ma2_Ex1_CS+.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 11:57:43 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 11:57:43 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     11:57:44 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     11:57:44 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          12:00:32 - 23/02/2023
+23-Feb-2023 12:00:32 - Done    'fMRI model specification'
+23-Feb-2023 12:00:32 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             12:00:32 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              12:00:34 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (120922 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.239560e+02 [+4.25]
+  ReML Iteration 2                      :        ...3.112901e+01 [+4.50]
+  ReML Iteration 3                      :        ...9.952816e-01 [+4.75]
+  ReML Iteration 4                      :        ...5.974008e-02 [+5.00]
+
+SPM12: spm_spm (v7738)                             12:02:29 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          12:05:03 - 23/02/2023
+Done
+23-Feb-2023 12:24:40 - Done    'Model estimation'
+23-Feb-2023 12:24:40 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3956/spm_Results_ori_Ex2_CS+
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3956_Ma2_Ex2_CS+.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 12:24:54 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 12:24:54 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     12:24:54 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     12:24:54 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          12:27:51 - 23/02/2023
+23-Feb-2023 12:27:51 - Done    'fMRI model specification'
+23-Feb-2023 12:27:51 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             12:27:52 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              12:27:53 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (136950 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.094729e+02 [+4.25]
+  ReML Iteration 2                      :        ...2.412427e+01 [+4.50]
+  ReML Iteration 3                      :        ...7.744080e-01 [+4.75]
+  ReML Iteration 4                      :        ...4.307532e-02 [+5.00]
+
+SPM12: spm_spm (v7738)                             12:29:46 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          12:32:23 - 23/02/2023
+Done
+23-Feb-2023 12:52:02 - Done    'Model estimation'
+23-Feb-2023 12:52:02 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3956/spm_Results_ori_Ex3_CS+
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3956_Ma2_Ex3_CS+.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 12:52:16 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 12:52:16 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     12:52:16 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     12:52:16 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          12:55:04 - 23/02/2023
+23-Feb-2023 12:55:04 - Done    'fMRI model specification'
+23-Feb-2023 12:55:04 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             12:55:04 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              12:55:06 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (133719 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.154832e+02 [+4.25]
+  ReML Iteration 2                      :        ...3.051308e+01 [+4.50]
+  ReML Iteration 3                      :        ...1.031200e+00 [+4.75]
+  ReML Iteration 4                      :        ...6.400026e-02 [+5.00]
+
+SPM12: spm_spm (v7738)                             12:57:07 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          12:59:42 - 23/02/2023
+Done
+23-Feb-2023 13:19:28 - Done    'Model estimation'
+23-Feb-2023 13:19:28 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3956/spm_Results_ori_Ex1_CS-
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3956_Ma2_Ex1_CS-.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 13:19:42 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 13:19:42 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     13:19:42 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     13:19:42 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          13:22:32 - 23/02/2023
+23-Feb-2023 13:22:32 - Done    'fMRI model specification'
+23-Feb-2023 13:22:32 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             13:22:32 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              13:22:34 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (108077 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.365367e+02 [+4.25]
+  ReML Iteration 2                      :        ...3.962802e+01 [+4.50]
+  ReML Iteration 3                      :        ...1.129664e+00 [+4.75]
+  ReML Iteration 4                      :        ...6.755501e-02 [+5.00]
+
+SPM12: spm_spm (v7738)                             13:24:30 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          13:27:12 - 23/02/2023
+Done
+23-Feb-2023 13:47:05 - Done    'Model estimation'
+23-Feb-2023 13:47:05 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3956/spm_Results_ori_Ex2_CS-
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3956_Ma2_Ex2_CS-.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 13:47:19 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 13:47:19 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     13:47:20 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     13:47:20 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          13:50:11 - 23/02/2023
+23-Feb-2023 13:50:11 - Done    'fMRI model specification'
+23-Feb-2023 13:50:11 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             13:50:11 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              13:50:13 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (113309 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.284181e+02 [+4.25]
+  ReML Iteration 2                      :        ...3.665017e+01 [+4.50]
+  ReML Iteration 3                      :        ...1.104022e+00 [+4.75]
+  ReML Iteration 4                      :        ...6.689719e-02 [+5.00]
+
+SPM12: spm_spm (v7738)                             13:52:08 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          13:54:45 - 23/02/2023
+Done
+23-Feb-2023 14:14:48 - Done    'Model estimation'
+23-Feb-2023 14:14:48 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Gesunde/sub-3956/spm_Results_ori_Ex3_CS-
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3956_Ma2_Ex3_CS-.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 14:15:02 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 14:15:02 - Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7739)                     14:15:02 - 23/02/2023
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7738)                     14:15:02 - 23/02/2023
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          14:18:06 - 23/02/2023
+23-Feb-2023 14:18:06 - Done    'fMRI model specification'
+23-Feb-2023 14:18:06 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             14:18:06 - 23/02/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              14:18:08 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (122267 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...2.305049e+02 [+4.25]
+  ReML Iteration 2                      :        ...3.688079e+01 [+4.50]
+  ReML Iteration 3                      :        ...1.147100e+00 [+4.75]
+  ReML Iteration 4                      :        ...7.173344e-02 [+5.00]
+
+SPM12: spm_spm (v7738)                             14:20:04 - 23/02/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          14:22:38 - 23/02/2023
+Done
+23-Feb-2023 14:42:45 - Done    'Model estimation'
+23-Feb-2023 14:42:45 - Done
+
+Result folder:/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/Patienten/sub-3001/spm_Results_ori
+Used conditation file:/mnt/hgfs/FSL_ICA/onsets_4D_Patienten_Gesunde/3001_Ma2.mat
+
+
+------------------------------------------------------------------------
+23-Feb-2023 14:42:59 - Running job #1
+------------------------------------------------------------------------
+23-Feb-2023 14:42:59 - Running 'fMRI model specification'
+Abort...   (existing SPM file)          :          14:52:51 - 23/02/2023
+
+23-Feb-2023 14:52:51 - Done    'fMRI model specification'
+Dependency source available, but is missing required output.
+Dot indexing is not supported for variables of this type.
+In item Select SPM.mat:
+Dependency 1: fMRI model specification: SPM.mat File (out.spmmat)
+
+
+No executable modules, but still unresolved dependencies or incomplete module inputs.
+The following modules did not run:
+Skipped: Model estimation
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MATLABbatch system')" style="font-weight:bold">MATLABbatch system</a>
+Job execution failed. The full log of this run can be found in MATLAB command window, starting with the lines (look for the line showing the exact #job as
+displayed in this error message)
+------------------
+Running job #1
+------------------
+} 
+
+SPM_Denoised

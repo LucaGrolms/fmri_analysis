@@ -1,0 +1,6 @@
+{Unrecognized function or variable 'secondlevel_dors_cov_cfr_job'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('secondlevel_dors', '/home/fsluser/support_fmri_master/SPM/secondlevel_dors/secondlevel_dors.m', 116)" style="font-weight:bold">secondlevel_dors</a> (<a href="matlab: opentoline('/home/fsluser/support_fmri_master/SPM/secondlevel_dors/secondlevel_dors.m',116,0)">line 116</a>)
+     secondlevel_dors_cov_cfr_job(Result_Folder, group1, group2);
+} 
+secondlevel_dors

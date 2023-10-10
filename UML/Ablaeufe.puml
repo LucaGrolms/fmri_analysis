@@ -1,0 +1,73 @@
+@startuml
+title fmri Pipeline with DoRs analytics
+
+start
+:Start processing read studyfile with subjects;
+repeat
+ :Noised subjects;
+ repeat 
+ :scans 3d to one 4d;
+ repeat while (all scans per subject) is (590)
+repeat while (all subjects within studyfile)
+
+repeat
+:fsl6 melodic ICA per subject;    
+repeat while (all subjects)
+
+repeat
+:Find artifacts and remove;
+:Build 590 denoised scans per subject;    
+repeat while (all subjects)
+fork
+ :Prepare First Level SPM runs;
+ :Define matlabbatch parameter;
+  repeat 
+   :Read denoised/noised images per subject;
+  repeat while (denoised/noised all subjets)
+fork again
+ :Use Base condition files;
+  repeat
+   :Modify condition file;
+   :Create modified condition file;
+  repeat while (different condition files) is (8) 
+end fork
+repeat    
+:Run First Level;
+repeat while (all subjects - denoised/noised) 
+:Create DoRs per Condition;
+repeat 
+repeat
+:Substract "reference image" - "modify condition image";
+: Save the diff DoR images;
+repeat while (different conditions) is (8)
+repeat while (all subjects)
+repeat
+:Prepare 2nd Level SPM runs;
+:Define 2 groups;
+repeat
+:Load "Gesunde" DoRs in group1;
+:Load "Patienten" DoRs in group2; 
+repeat while (all subjects)
+if (covariates ? ) then (anxiety)
+:define 4 convariates group values;
+else (crf)
+:define 2 covariates group values;
+endif
+:Run and create SPM.mat;
+:Perform SPM Estimate of SPM.mat;
+if (contrast) then (T)
+   if (T-contrasts) then (for anxiety)
+     :define 16 different contrasts;
+   else (for crf)
+     :define 8 differnt contrasts;
+   endif
+else (F)
+ :define one F-Contrast Matrix;
+endif    
+:masking = none, threshold 0.005 voxels 50;
+:Perform Result of SPM.mat;
+repeat while (for all condition DoRs) is (8)
+:Find and show the variances;
+:Use SPM and xjview;
+stop
+@enduml

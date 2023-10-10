@@ -1,1 +1,1 @@
-Hier befindet sich ein Skript, was zur Anpassung der Condition-Files verwendet wurde.
+Hier befinden sich ein Skripte, welche zur Anpassung der Condition-Files verwendet wurden.

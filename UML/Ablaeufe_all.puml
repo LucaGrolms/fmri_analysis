@@ -1,0 +1,77 @@
+@startuml
+title fmri Holistic Pipeline with DoRs analytics
+
+start
+:Start processing read studyfile with subjects;
+repeat
+ :Noised subjects;
+ repeat 
+ :scans 3d to one 4d;
+ repeat while (all scans per subject) is (repeat this for all 590 scans)
+repeat while (all subjects within studyfile) is (repeat this for all subjects)
+
+repeat
+:fsl6 melodic ICA per subject;    
+repeat while (all subjects) is (repeat this for all subjects)
+
+repeat
+:Find artifacts and remove;
+:Build 590 denoised scans per subject;    
+repeat while (all subjects) is (repeat this for all subjects)
+stop
+
+start
+
+
+fork
+ :Prepare First Level SPM runs;
+ :Define matlabbatch parameter;
+  repeat 
+   :Read denoised/noised images per subject;
+  repeat while (denoised/noised all subjets) is (repeat this for all subjects)
+fork again
+ :Use Base condition files;
+  repeat
+   :Modify condition file;
+   :Create modified condition file;
+  repeat while (different condition files) is (repeat this for all 8 conditions) 
+end fork
+repeat    
+:Run First Level;
+repeat while (all subjects - denoised/noised) is (repeat this for all subjects)
+:Create DoRs per Condition;
+repeat 
+repeat
+:Substract: Model A image - Model B image;
+: Save the diff DoR images;
+repeat while (different conditions) is (repeat this for all 8 conditions)
+repeat while (all subjects) is (repeat this for all subjects)
+repeat
+:Prepare 2nd Level SPM runs;
+:Define 2 groups;
+repeat
+:Load "Gesunde" DoRs in group1;
+:Load "Patienten" DoRs in group2; 
+repeat while (all subjects) is (repeat this for all subjects)
+if (covariates ? ) then (Anxiety Results)
+:define 4 covariates group values;
+else (ASI, BDI)
+:define 2 covariates group values;
+endif
+:Run and create SPM.mat;
+:Perform SPM Estimate of SPM.mat;
+if (contrast) then (T)
+   if (T-contrasts) then (for Anxiety Results)
+     :define 16 different contrasts;
+   else (for ASI, BDI)
+     :define 8 differnt contrasts;
+   endif
+else (F)
+ :define one F-contrast matrix (in case of Anxiety or ASI, BDI);
+endif    
+:masking = none, threshold 0.005 voxels 50;
+:Perform Result of SPM.mat;
+repeat while (for all condition DoRs) is (repeat this for all 8 conditions)
+:Use SPM and xjview to visualize the results;
+stop
+@endum

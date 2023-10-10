@@ -1,0 +1,7 @@
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mkdir')" style="font-weight:bold">mkdir</a>
+Device or resource busy
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('secondlevel_dors', '/home/fsluser/support_fmri_master/SPM/secondlevel_dors/secondlevel_dors.m', 107)" style="font-weight:bold">secondlevel_dors</a> (<a href="matlab: opentoline('/home/fsluser/support_fmri_master/SPM/secondlevel_dors/secondlevel_dors.m',107,0)">line 107</a>)
+       mkdir(Result_Folder);
+} 
+secondlevel_dors

@@ -1,0 +1,629 @@
+
+
+------------------------------------------------------------------------
+11-Mar-2023 20:43:28 - Running job #1
+------------------------------------------------------------------------
+11-Mar-2023 20:43:28 - Running 'Factorial design specification'
+Mapping files                           :                        ...done
+Design configuration                    :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          20:43:31 - 11/03/2023
+11-Mar-2023 20:43:31 - Done    'Factorial design specification'
+11-Mar-2023 20:43:31 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             20:43:31 - 11/03/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              20:43:31 - 11/03/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (23734 voxels)  :             ...ReML estimation
+  ReML Iteration 1                      :        ...6.913083e-01 [+4.25]
+  ReML Iteration 2                      :        ...4.327934e-02 [+4.50]
+
+SPM12: spm_spm (v7738)                             20:43:36 - 11/03/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          20:43:54 - 11/03/2023
+Done
+11-Mar-2023 20:43:54 - Done    'Model estimation'
+11-Mar-2023 20:43:54 - Running 'Contrast Manager'
+
+SPM12: spm_contrasts.m                             20:43:54 - 11/03/2023
+========================================================================
+Contrasts folder                        :      ./DoR/Denoised_cov/rating
+	ESS image  1                    :                   ...computing       ...written ess_0001.nii
+	spm{F} image  1                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/rating','Ic',1));TabDat = spm_list('List',xSPM,hReg);;">spmF_0001.nii</a>
+	Saving SPM.mat                  :                     ...writing              ...SPM.mat saved
+Completed                               :          20:43:55 - 11/03/2023
+11-Mar-2023 20:43:55 - Done    'Contrast Manager'
+11-Mar-2023 20:43:55 - Running 'Results Report'
+
+SPM12: spm_results_ui (v7388)                      20:43:55 - 11/03/2023
+========================================================================
+	SPM computation                 :                ...initialising           ...height threshold           ...extent threshold                       ...done
+Printing 'Graphics' figure to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/rating/spm_2023Mar11.ps');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/rating/spm_2023Mar11.ps</a>
+Printing 'Graphics' figure to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/rating/spm_2023Mar11.ps');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/rating/spm_2023Mar11.ps</a>
+Saving results to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/rating/spm_2023Mar11_001.csv');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/rating/spm_2023Mar11_001.csv</a>
+11-Mar-2023 20:44:02 - Done    'Results Report'
+11-Mar-2023 20:44:02 - Done
+
+
+
+------------------------------------------------------------------------
+11-Mar-2023 20:44:06 - Running job #1
+------------------------------------------------------------------------
+11-Mar-2023 20:44:06 - Running 'Factorial design specification'
+Mapping files                           :                        ...done
+Design configuration                    :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Design reporting                        :                        ...done
+Completed                               :          20:44:10 - 11/03/2023
+11-Mar-2023 20:44:10 - Done    'Factorial design specification'
+11-Mar-2023 20:44:10 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             20:44:10 - 11/03/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              20:44:11 - 11/03/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (114797 voxels) :             ...ReML estimation
+  ReML Iteration 1                      :        ...9.596821e-01 [+4.25]
+  ReML Iteration 2                      :        ...1.933669e-05 [+4.50]
+
+SPM12: spm_spm (v7738)                             20:44:15 - 11/03/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          20:44:33 - 11/03/2023
+Done
+11-Mar-2023 20:44:33 - Done    'Model estimation'
+11-Mar-2023 20:44:33 - Running 'Contrast Manager'
+
+SPM12: spm_contrasts.m                             20:44:33 - 11/03/2023
+========================================================================
+Contrasts folder                        :     ./DoR/Denoised_cov/Ex1_CS+
+	ESS image  1                    :                   ...computing       ...written ess_0001.nii
+	spm{F} image  1                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS+','Ic',1));TabDat = spm_list('List',xSPM,hReg);;">spmF_0001.nii</a>
+	Saving SPM.mat                  :                     ...writing              ...SPM.mat saved
+Completed                               :          20:44:34 - 11/03/2023
+11-Mar-2023 20:44:34 - Done    'Contrast Manager'
+11-Mar-2023 20:44:34 - Running 'Results Report'
+
+SPM12: spm_results_ui (v7388)                      20:44:34 - 11/03/2023
+========================================================================
+	SPM computation                 :                ...initialising           ...height threshold           ...extent threshold                       ...done
+Printing 'Graphics' figure to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS+/spm_2023Mar11.ps');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS+/spm_2023Mar11.ps</a>
+Printing 'Graphics' figure to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS+/spm_2023Mar11.ps');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS+/spm_2023Mar11.ps</a>
+Saving results to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS+/spm_2023Mar11_001.csv');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS+/spm_2023Mar11_001.csv</a>
+11-Mar-2023 20:44:40 - Done    'Results Report'
+11-Mar-2023 20:44:40 - Done
+
+
+
+------------------------------------------------------------------------
+11-Mar-2023 20:44:45 - Running job #1
+------------------------------------------------------------------------
+11-Mar-2023 20:44:45 - Running 'Factorial design specification'
+Mapping files                           :                        ...done
+Design configuration                    :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Design reporting                        :                        ...done
+Completed                               :          20:44:49 - 11/03/2023
+11-Mar-2023 20:44:49 - Done    'Factorial design specification'
+11-Mar-2023 20:44:49 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             20:44:49 - 11/03/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              20:44:49 - 11/03/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (6941 voxels)   :             ...ReML estimation
+  ReML Iteration 1                      :        ...9.897355e-01 [+4.25]
+  ReML Iteration 2                      :        ...8.601111e-05 [+4.50]
+
+SPM12: spm_spm (v7738)                             20:44:54 - 11/03/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          20:45:12 - 11/03/2023
+Done
+11-Mar-2023 20:45:12 - Done    'Model estimation'
+11-Mar-2023 20:45:12 - Running 'Contrast Manager'
+
+SPM12: spm_contrasts.m                             20:45:12 - 11/03/2023
+========================================================================
+Contrasts folder                        :     ./DoR/Denoised_cov/Ex2_CS+
+	ESS image  1                    :                   ...computing       ...written ess_0001.nii
+	spm{F} image  1                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex2_CS+','Ic',1));TabDat = spm_list('List',xSPM,hReg);;">spmF_0001.nii</a>
+	Saving SPM.mat                  :                     ...writing              ...SPM.mat saved
+Completed                               :          20:45:13 - 11/03/2023
+11-Mar-2023 20:45:13 - Done    'Contrast Manager'
+11-Mar-2023 20:45:13 - Running 'Results Report'
+
+SPM12: spm_results_ui (v7388)                      20:45:13 - 11/03/2023
+========================================================================
+	SPM computation                 :                ...initialising           ...height threshold           ...extent threshold                       ...done
+Printing 'Graphics' figure to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex2_CS+/spm_2023Mar11.ps');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex2_CS+/spm_2023Mar11.ps</a>
+Printing 'Graphics' figure to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex2_CS+/spm_2023Mar11.ps');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex2_CS+/spm_2023Mar11.ps</a>
+Saving results to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex2_CS+/spm_2023Mar11_001.csv');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex2_CS+/spm_2023Mar11_001.csv</a>
+11-Mar-2023 20:45:19 - Done    'Results Report'
+11-Mar-2023 20:45:19 - Done
+
+
+
+------------------------------------------------------------------------
+11-Mar-2023 20:45:23 - Running job #1
+------------------------------------------------------------------------
+11-Mar-2023 20:45:23 - Running 'Factorial design specification'
+Mapping files                           :                        ...done
+Design configuration                    :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Design reporting                        :                        ...done
+Completed                               :          20:45:27 - 11/03/2023
+11-Mar-2023 20:45:27 - Done    'Factorial design specification'
+11-Mar-2023 20:45:27 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             20:45:27 - 11/03/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              20:45:27 - 11/03/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (229 voxels)    :             ...ReML estimation
+  ReML Iteration 1                      :        ...4.764497e-01 [+4.25]
+  ReML Iteration 2                      :        ...2.463533e-02 [+4.50]
+
+SPM12: spm_spm (v7738)                             20:45:31 - 11/03/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          20:45:49 - 11/03/2023
+Done
+11-Mar-2023 20:45:49 - Done    'Model estimation'
+11-Mar-2023 20:45:49 - Running 'Contrast Manager'
+
+SPM12: spm_contrasts.m                             20:45:49 - 11/03/2023
+========================================================================
+Contrasts folder                        :     ./DoR/Denoised_cov/Ex3_CS+
+	ESS image  1                    :                   ...computing       ...written ess_0001.nii
+	spm{F} image  1                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex3_CS+','Ic',1));TabDat = spm_list('List',xSPM,hReg);;">spmF_0001.nii</a>
+	Saving SPM.mat                  :                     ...writing              ...SPM.mat saved
+Completed                               :          20:45:50 - 11/03/2023
+11-Mar-2023 20:45:50 - Done    'Contrast Manager'
+11-Mar-2023 20:45:50 - Running 'Results Report'
+
+SPM12: spm_results_ui (v7388)                      20:45:50 - 11/03/2023
+========================================================================
+	SPM computation                 :                ...initialising           ...height threshold           ...extent threshold                       ...done
+Printing 'Graphics' figure to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex3_CS+/spm_2023Mar11.ps');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex3_CS+/spm_2023Mar11.ps</a>
+Saving results to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex3_CS+/spm_2023Mar11_001.csv');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex3_CS+/spm_2023Mar11_001.csv</a>
+11-Mar-2023 20:45:53 - Done    'Results Report'
+11-Mar-2023 20:45:53 - Done
+
+
+
+------------------------------------------------------------------------
+11-Mar-2023 20:45:57 - Running job #1
+------------------------------------------------------------------------
+11-Mar-2023 20:45:57 - Running 'Factorial design specification'
+Mapping files                           :                        ...done
+Design configuration                    :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Design reporting                        :                        ...done
+Completed                               :          20:45:59 - 11/03/2023
+11-Mar-2023 20:45:59 - Done    'Factorial design specification'
+11-Mar-2023 20:45:59 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             20:45:59 - 11/03/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              20:45:59 - 11/03/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (77449 voxels)  :             ...ReML estimation
+  ReML Iteration 1                      :        ...1.331933e+00 [+4.25]
+  ReML Iteration 2                      :        ...1.963634e-03 [+4.50]
+
+SPM12: spm_spm (v7738)                             20:46:04 - 11/03/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          20:46:23 - 11/03/2023
+Done
+11-Mar-2023 20:46:23 - Done    'Model estimation'
+11-Mar-2023 20:46:23 - Running 'Contrast Manager'
+
+SPM12: spm_contrasts.m                             20:46:23 - 11/03/2023
+========================================================================
+Contrasts folder                        :     ./DoR/Denoised_cov/Ex1_CS-
+	ESS image  1                    :                   ...computing       ...written ess_0001.nii
+	spm{F} image  1                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS-','Ic',1));TabDat = spm_list('List',xSPM,hReg);;">spmF_0001.nii</a>
+	Saving SPM.mat                  :                     ...writing              ...SPM.mat saved
+Completed                               :          20:46:24 - 11/03/2023
+11-Mar-2023 20:46:24 - Done    'Contrast Manager'
+11-Mar-2023 20:46:24 - Running 'Results Report'
+
+SPM12: spm_results_ui (v7388)                      20:46:24 - 11/03/2023
+========================================================================
+	SPM computation                 :                ...initialising           ...height threshold           ...extent threshold                       ...done
+Printing 'Graphics' figure to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS-/spm_2023Mar11.ps');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS-/spm_2023Mar11.ps</a>
+Printing 'Graphics' figure to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS-/spm_2023Mar11.ps');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS-/spm_2023Mar11.ps</a>
+Printing 'Graphics' figure to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS-/spm_2023Mar11.ps');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS-/spm_2023Mar11.ps</a>
+Saving results to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS-/spm_2023Mar11_001.csv');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex1_CS-/spm_2023Mar11_001.csv</a>
+11-Mar-2023 20:46:33 - Done    'Results Report'
+11-Mar-2023 20:46:33 - Done
+
+
+
+------------------------------------------------------------------------
+11-Mar-2023 20:46:37 - Running job #1
+------------------------------------------------------------------------
+11-Mar-2023 20:46:37 - Running 'Factorial design specification'
+Mapping files                           :                        ...done
+Design configuration                    :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Design reporting                        :                        ...done
+Completed                               :          20:46:41 - 11/03/2023
+11-Mar-2023 20:46:41 - Done    'Factorial design specification'
+11-Mar-2023 20:46:41 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             20:46:41 - 11/03/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              20:46:41 - 11/03/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (7754 voxels)   :             ...ReML estimation
+  ReML Iteration 1                      :        ...1.102926e+00 [+4.25]
+  ReML Iteration 2                      :        ...3.775570e-03 [+4.50]
+
+SPM12: spm_spm (v7738)                             20:46:45 - 11/03/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          20:47:06 - 11/03/2023
+Done
+11-Mar-2023 20:47:06 - Done    'Model estimation'
+11-Mar-2023 20:47:06 - Running 'Contrast Manager'
+
+SPM12: spm_contrasts.m                             20:47:06 - 11/03/2023
+========================================================================
+Contrasts folder                        :     ./DoR/Denoised_cov/Ex2_CS-
+	ESS image  1                    :                   ...computing       ...written ess_0001.nii
+	spm{F} image  1                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex2_CS-','Ic',1));TabDat = spm_list('List',xSPM,hReg);;">spmF_0001.nii</a>
+	Saving SPM.mat                  :                     ...writing              ...SPM.mat saved
+Completed                               :          20:47:06 - 11/03/2023
+11-Mar-2023 20:47:06 - Done    'Contrast Manager'
+11-Mar-2023 20:47:06 - Running 'Results Report'
+
+SPM12: spm_results_ui (v7388)                      20:47:06 - 11/03/2023
+========================================================================
+	SPM computation                 :                ...initialising           ...height threshold           ...extent threshold                       ...done
+Printing 'Graphics' figure to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex2_CS-/spm_2023Mar11.ps');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex2_CS-/spm_2023Mar11.ps</a>
+Saving results to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex2_CS-/spm_2023Mar11_001.csv');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex2_CS-/spm_2023Mar11_001.csv</a>
+11-Mar-2023 20:47:09 - Done    'Results Report'
+11-Mar-2023 20:47:10 - Done
+
+
+
+------------------------------------------------------------------------
+11-Mar-2023 20:47:13 - Running job #1
+------------------------------------------------------------------------
+11-Mar-2023 20:47:13 - Running 'Factorial design specification'
+Mapping files                           :                        ...done
+Design configuration                    :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Design reporting                        :                        ...done
+Completed                               :          20:47:17 - 11/03/2023
+11-Mar-2023 20:47:17 - Done    'Factorial design specification'
+11-Mar-2023 20:47:17 - Running 'Model estimation'
+
+SPM12: spm_spm (v7738)                             20:47:17 - 11/03/2023
+========================================================================
+
+SPM12: spm_est_non_sphericity (v7577)              20:47:17 - 11/03/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Temporal non-sphericity (1702 voxels)   :             ...ReML estimation
+  ReML Iteration 1                      :        ...8.463529e-01 [+4.25]
+  ReML Iteration 2                      :        ...2.858428e-04 [+4.50]
+
+SPM12: spm_spm (v7738)                             20:47:21 - 11/03/2023
+========================================================================
+Chunk   1/1                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          20:47:44 - 11/03/2023
+Done
+11-Mar-2023 20:47:44 - Done    'Model estimation'
+11-Mar-2023 20:47:44 - Running 'Contrast Manager'
+
+SPM12: spm_contrasts.m                             20:47:44 - 11/03/2023
+========================================================================
+Contrasts folder                        :     ./DoR/Denoised_cov/Ex3_CS-
+	ESS image  1                    :                   ...computing       ...written ess_0001.nii
+	spm{F} image  1                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex3_CS-','Ic',1));TabDat = spm_list('List',xSPM,hReg);;">spmF_0001.nii</a>
+	Saving SPM.mat                  :                     ...writing              ...SPM.mat saved
+Completed                               :          20:47:45 - 11/03/2023
+11-Mar-2023 20:47:45 - Done    'Contrast Manager'
+11-Mar-2023 20:47:45 - Running 'Results Report'
+
+SPM12: spm_results_ui (v7388)                      20:47:45 - 11/03/2023
+========================================================================
+	SPM computation                 :                ...initialising           ...height threshold           ...extent threshold                       ...done
+Printing 'Graphics' figure to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex3_CS-/spm_2023Mar11.ps');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex3_CS-/spm_2023Mar11.ps</a>
+Saving results to:
+  <a href="matlab:open('/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex3_CS-/spm_2023Mar11_001.csv');">/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov/Ex3_CS-/spm_2023Mar11_001.csv</a>
+11-Mar-2023 20:47:47 - Done    'Results Report'
+11-Mar-2023 20:47:47 - Done
+
+Could not access file "beta_0001.nii".
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_get_data')" style="font-weight:bold">spm_get_data</a>
+Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_sample_vol')" style="font-weight:bold">spm_sample_vol</a>
+Cant open image file.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_data_read', '/home/fsluser/spm12/spm_data_read.m', 48)" style="font-weight:bold">spm_data_read</a> (<a href="matlab: opentoline('/home/fsluser/spm12/spm_data_read.m',48,0)">line 48</a>)
+                    Y = spm_get_data(V,varargin{2});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_graph', '/home/fsluser/spm12/spm_graph.m', 113)" style="font-weight:bold">spm_graph</a> (<a href="matlab: opentoline('/home/fsluser/spm12/spm_graph.m',113,0)">line 113</a>)
+    beta  = spm_data_read(SPM.Vbeta,'xyz',XYZ);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_graph_ui', '/home/fsluser/spm12/spm_graph_ui.m', 262)" style="font-weight:bold">spm_graph_ui</a> (<a href="matlab: opentoline('/home/fsluser/spm12/spm_graph_ui.m',262,0)">line 262</a>)
+[Y,y,beta,Bcov,G] = spm_graph(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_graph_ui', '/home/fsluser/spm12/spm_graph_ui.m', 90)" style="font-weight:bold">spm_graph_ui</a> (<a href="matlab: opentoline('/home/fsluser/spm12/spm_graph_ui.m',90,0)">line 90</a>)
+    G = spm_graph_ui('Compute',SPM,XYZ,xG);
+} 
+Error while evaluating UIControl Callback.
+
+xjview
+{Unrecognized function or variable 'xjview'.
+} 
+XJVIEW
+{Unrecognized function or variable 'XJVIEW'.
+} 
+xjview
+xjview /home/fsluser/Downloads/xjview10/xjview/example2.img
+/mnt/hgfs/D/Smoothed_epis_EXT_T1_20211126/Copy_smoothed_epis_T1_Patienten_Gesunde/sourcedata/DoR/Denoised_cov_4_contrasts_v2/Ex3_CS-/spmT_0001.nii,1
+Type: T
+df: 42
+Threshold
+-- p value = 0.001
+-- intensity = 3.296
+-- cluster size = 5
+Number of clusters found: 6
+----------------------
+Cluster 1
+Number of voxels: 5
+Peak MNI coordinate: 10 -32 -18
+Peak MNI coordinate region:  // Right Brainstem // Midbrain // undefined // undefined // undefined // undefined
+Peak intensity: -3.6488
+Center of gravity MNI coordinate: 9 -32 -18
+Center of gravity MNI coordinate region:  // Right Brainstem // Midbrain // undefined // undefined // undefined // undefined
+# voxels	structure
+    5	--TOTAL # VOXELS--
+    5	Right Brainstem
+    5	Midbrain
+    1	Cerebellum_3_R (aal3v1)
+----------------------
+Cluster 2
+Number of voxels: 158
+Peak MNI coordinate: 28  44  -6
+Peak MNI coordinate region:  // Right Cerebrum // Frontal Lobe // Middle Frontal Gyrus // Gray Matter // brodmann area 11 // undefined
+Peak intensity: -3.6704
+Center of gravity MNI coordinate: 30  46  -5
+Center of gravity MNI coordinate region:  // Right Cerebrum // Frontal Lobe // Middle Frontal Gyrus // White Matter // undefined // undefined
+# voxels	structure
+  158	--TOTAL # VOXELS--
+  158	Right Cerebrum
+  157	Frontal Lobe
+  127	White Matter
+  111	Middle Frontal Gyrus
+   29	Frontal_Mid_2_R (aal3v1)
+   29	Sub-Gyral
+   28	Gray Matter
+   27	Frontal_Inf_Orb_2_R (aal3v1)
+   22	Frontal_Sup_2_R (aal3v1)
+   16	Superior Frontal Gyrus
+   14	brodmann area 10
+    9	brodmann area 11
+    6	Frontal_Med_Orb_R (aal3v1)
+    5	brodmann area 47
+    1	OFCmed_R (aal3v1)
+    1	Rectus_R (aal3v1)
+    1	Limbic Lobe
+    1	Medial Frontal Gyrus
+    1	Anterior Cingulate
+----------------------
+Cluster 3
+Number of voxels: 13
+Peak MNI coordinate: 12 -46 -14
+Peak MNI coordinate region:  // Right Cerebellum // Cerebellum Anterior Lobe // Culmen // undefined // undefined // Cerebellum_4_5_R (aal3v1)
+Peak intensity: -3.6528
+Center of gravity MNI coordinate: 12 -47 -10
+Center of gravity MNI coordinate region:  // Right Cerebellum // Cerebellum Anterior Lobe // Culmen // undefined // undefined // Cerebellum_4_5_R (aal3v1)
+# voxels	structure
+   13	--TOTAL # VOXELS--
+   13	Culmen
+   13	Right Cerebellum
+   13	Cerebellum Anterior Lobe
+   12	Cerebellum_4_5_R (aal3v1)
+    1	Lingual_R (aal3v1)
+----------------------
+Cluster 4
+Number of voxels: 9
+Peak MNI coordinate: 0 -40 -10
+Peak MNI coordinate region:  // Left Cerebellum // Cerebellum Anterior Lobe // Culmen // undefined // undefined // Vermis_3 (aal3v1)
+Peak intensity: -3.5143
+Center of gravity MNI coordinate: -2 -39 -10
+Center of gravity MNI coordinate region:  // Left Cerebellum // Cerebellum Anterior Lobe // Culmen // undefined // undefined // Vermis_3 (aal3v1)
+# voxels	structure
+    9	--TOTAL # VOXELS--
+    7	Vermis_3 (aal3v1)
+    4	Cerebellum Anterior Lobe
+    4	Culmen
+    3	Midbrain
+    3	Left Brainstem
+    3	Left Cerebellum
+    2	Cerebellum_3_L (aal3v1)
+    1	Right Cerebellum
+----------------------
+Cluster 5
+Number of voxels: 13
+Peak MNI coordinate: 36  32 -12
+Peak MNI coordinate region:  // Right Cerebrum // Frontal Lobe // Inferior Frontal Gyrus // Gray Matter // brodmann area 47 // Frontal_Inf_Orb_2_R (aal3v1)
+Peak intensity: -3.4866
+Center of gravity MNI coordinate: 36  32 -11
+Center of gravity MNI coordinate region:  // Right Cerebrum // Frontal Lobe // Inferior Frontal Gyrus // Gray Matter // brodmann area 47 // Frontal_Inf_Orb_2_R (aal3v1)
+# voxels	structure
+   13	--TOTAL # VOXELS--
+   13	Frontal Lobe
+   13	Right Cerebrum
+   12	Inferior Frontal Gyrus
+   12	Frontal_Inf_Orb_2_R (aal3v1)
+    9	Gray Matter
+    9	brodmann area 47
+    4	White Matter
+    1	Middle Frontal Gyrus
+    1	OFCpost_R (aal3v1)
+----------------------
+Cluster 6
+Number of voxels: 11
+Peak MNI coordinate: -14  50 -12
+Peak MNI coordinate region:  // Left Cerebrum // Frontal Lobe // Superior Frontal Gyrus // White Matter // undefined // undefined
+Peak intensity: -3.6633
+Center of gravity MNI coordinate: -15  48 -12
+Center of gravity MNI coordinate region:  // Left Cerebrum // Frontal Lobe // Superior Frontal Gyrus // White Matter // undefined // undefined
+# voxels	structure
+   11	--TOTAL # VOXELS--
+   11	Left Cerebrum
+   11	White Matter
+   11	Frontal Lobe
+    4	Middle Frontal Gyrus
+    4	Superior Frontal Gyrus
+    3	Sub-Gyral
+    2	OFCant_L (aal3v1)
+xjview
+xjview
+spm
+ ___  ____  __  __                                            
+/ __)(  _ \(  \/  )                                           
+\__ \ )___/ )    (   Statistical Parametric Mapping           
+(___/(__)  (_/\/\_)  SPM12 - https://www.fil.ion.ucl.ac.uk/spm/
+
+
+SPM12: v7771                                       12:21:06 - 12/03/2023
+========================================================================
+Initialising SPM                        :                   ........done
+
+SPM present working directory:
+	/home/fsluser/Downloads/xjview10
+Bye for now...
+
+spm
+ ___  ____  __  __                                            
+/ __)(  _ \(  \/  )                                           
+\__ \ )___/ )    (   Statistical Parametric Mapping           
+(___/(__)  (_/\/\_)  SPM12 - https://www.fil.ion.ucl.ac.uk/spm/
+
+
+SPM12: v7771                                       12:22:08 - 12/03/2023
+========================================================================
+Initialising SPM                        :                   ........done
+
+SPM present working directory:
+	/home/fsluser/Downloads/xjview10
+Bye for now...
+
+spm
+ ___  ____  __  __                                            
+/ __)(  _ \(  \/  )                                           
+\__ \ )___/ )    (   Statistical Parametric Mapping           
+(___/(__)  (_/\/\_)  SPM12 - https://www.fil.ion.ucl.ac.uk/spm/
+
+
+SPM12: v7771                                       12:28:09 - 12/03/2023
+========================================================================
+Initialising SPM                        :                   ........done
+
+SPM present working directory:
+	/home/fsluser/Downloads/xjview10
+Bye for now...
+
+wfu_pickatlas;
+{Unrecognized function or variable 'wfu_pickatlas'.
+} 
+addpath(SPMpath/toolbox/wfu_pickatlas);
+{Unrecognized function or variable 'SPMpath'.
+} 
+addpath(/home/fsluser/spm12/toolbox/wfu_pickatlas);
+ addpath(/home/fsluser/spm12/toolbox/wfu_pickatlas);
+         ↑
+{Invalid use of operator.
+} 
+addpath(home/fsluser/spm12/toolbox/wfu_pickatlas);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('home')" style="font-weight:bold">home</a>
+Too many output arguments.
+} 
+addpath(/home/fsluser/spm12/toolbox/wfu_pickatlas);
+ addpath(/home/fsluser/spm12/toolbox/wfu_pickatlas);
+         ↑
+{Invalid use of operator.
+} 
+addpath(/home/fsluser/spm12/toolbox/WFU_PickAtlas_3.0.5b
+ addpath(/home/fsluser/spm12/toolbox/WFU_PickAtlas_3.0.5b
+         ↑
+{Invalid use of operator.
+} 
+addpath(/home/fsluser/spm12/toolbox/WFU_PickAtlas_3.0.5b
+ addpath(/home/fsluser/spm12/toolbox/WFU_PickAtlas_3.0.5b
+         ↑
+{Invalid use of operator.
+} 
+addpath(/home/fsluser/spm12/toolbox/WFU_PickAtlas_3.0.5.b);
+ addpath(/home/fsluser/spm12/toolbox/WFU_PickAtlas_3.0.5.b);
+         ↑
+{Invalid use of operator.
+} 
+wfu_pickatlas;
+
+ans = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+         atlasname: 'HUMAN ATLAS'
+            subdir: 'MNI_atlas_templates'
+        lookupfile: 'master_lookup.txt'
+         dispimage: 'MNI_T1.nii'
+       licensefile: 'info.html'
+    conversionfile: 'atlas_space_conversions.txt'
+        conversion: [1×2 struct]
+
