@@ -27,6 +27,6 @@ Als studyfile fuer siese Ablaufe sind Beispiel Files hinterlegt worden.
 - Noised: study_file_SPM_volumes_origin.txt
 - Denoised: study_file_SPM_volumes.txt oder study_file_SPM_volumes_test.txt
 
-Die Abläufe basieren i.d.R. auf der Nutzung von SPM12, somit sind die relevanten SPM12 Pfade als matlab Pathes zu hinterlegen.
+Die Abläufe basieren i.d.R. auf der Nutzung von SPM12, somit sind die relevanten SPM12 Pfade als matlab Paths zu hinterlegen.
 
 Wird SPM8 genutzt, werden in den Ergebnissen die relevanten base files nicht gelöscht, da diese als .hdr/.img erzeugt werden.
