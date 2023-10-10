@@ -12,8 +12,8 @@ subject_folders_gesunde = ["sub-3952", "sub-3953", "sub-3955", "sub-3956", "sub-
 # Liste der results folder Namen nach spm runs für denoised und noised unterschiedlich definiert
 imagetype = "noised"
 results_modification = ["rating", "UCS", "Ex1_CS+", "Ex2_CS+", "Ex3_CS+", "Ex1_CS-", "Ex2_CS-", "Ex3_CS-"]
-# Resudien file name, immer gleich in den jeweiligen results folders, bei SPM8 ResMS.img
-resudien = "ResMS.nii"
+# Residuen file name, immer gleich in den jeweiligen results folders, bei SPM8 ResMS.img
+residuen = "ResMS.nii"
 # base_path
 #      |
 #      |-Patienten
@@ -53,7 +53,7 @@ for sub_path in sub_paths:
      subject = os.path.join(os.path.normpath(base_path), sub_path, subject_folder)
      
      # Pfad zum Referenzbild für dieses subject
-     reference_image = os.path.join(subject, results_reference_folder, resudien)
+     reference_image = os.path.join(subject, results_reference_folder, residuen)
     
      # Referenzbild laden
      ref_img = nib.load(reference_image)
@@ -66,7 +66,7 @@ for sub_path in sub_paths:
         VP_modification_folder = subject_folder +"_" + results_reference_folder + "_" +  modifications
         
         # Modification Bild laden
-        img = nib.load(os.path.join(subject, modification_folder, resudien))
+        img = nib.load(os.path.join(subject, modification_folder, residuen))
         img_data = img.get_fdata()
         
         # Abzug Modification result vom result Referenz
